@@ -1,10 +1,12 @@
 import './Transport.css';
-// import Video from "./Video";
+import Header from "./Header";
+import Options from "./options/Options";
 
 const Transport = () => {
 	return (
 		<div className='page transport'>
-			t
+			<Header />
+			<Options />
 		</div>
 	)
 }

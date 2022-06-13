@@ -38,3 +38,86 @@
     flex: 1;
     scroll-behavior: smooth;
 }
+
+dropdown {
+    position: relative;
+    display: block;
+    font-size: 1.25vmax;
+    -webkit-tap-highlight-color: transparent;
+    height: calc(1em + 2vh + 5px);
+    margin-top: .4em;
+    font-weight: 400;
+    user-select: none;
+    z-index: 0;
+    --transition-time: .35s;
+    transition: 0s z-index var(--transition-time);
+}
+
+dropdown>.content {
+    transition: max-height var(--transition-time) ease-in-out;
+    max-height: calc(1em + 2vh + 4.25px);
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    border: 3px solid var(--white-4);
+    background-color: var(--bg);
+}
+
+dropdown>.content>:first-child {
+    font-weight: 700;
+}
+
+dropdown>.content>* {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(1em + 2vh);
+    padding: 0 1vh;
+}
+
+decoratedtitle {
+    display: block;
+    line-height: 1.2;
+}
+
+.main .page .retractable {
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+}
+
+dropdown>.content .retractable {
+    position: absolute;
+    left: 1em;
+}
+
+dropdown .retractable {
+    width: 1em;
+}
+
+.main .page .retractable:after, .main .page .retractable:before {
+    content: "";
+    display: inline-block;
+    width: 15%;
+    padding-top: 75%;
+    background-color: var(--absolute-black);
+    border-radius: 15px;
+    transition: transform .5s ease-in-out;
+}
+
+.main .page .retractable:before {
+    margin-inline-start: 20%;
+    transform: rotate(45deg);
+}
+
+.main .page .retractable:after {
+    margin-inline-start: 30%;
+    transform: rotate(-45deg);
+}
+
+.main .page .retractable.opened:after, .main .page :focus .retractable:after {
+    transform: rotate(-135deg);
+}
+
+.main .page .retractable.opened:before, .main .page :focus .retractable:before {
+    transform: rotate(135deg);
+}
