@@ -1,0 +1,44 @@
+.footer>.content {
+    font-size: 2.25em;
+    margin-top: auto;
+    padding-top: 4em;
+    background: var(--absolute-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer>.content .till.text {
+    font-size: 2vmin;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: .75em;
+}
+
+.footer>.content .till.icon {
+    margin-top: 0;
+    width: 10vmin;
+}
+
+.footer>.content .button {
+    min-width: 10vmax;
+    margin-bottom: 10vmin;
+    margin-top: 2vmin;
+}
+
+.button, .button.link:visited, .button.link :visited {
+    color: var(--primary-color);
+}
+
+.button {
+    font-family: SecularOne;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5vmax;
+    align-items: center;
+    padding: .2em .4em;
+    border-radius: var(--border-radius);
+    border: 3px solid var(--primary-color);
+    justify-content: center;
+}

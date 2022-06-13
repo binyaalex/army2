@@ -1,0 +1,30 @@
+html {
+    --grey: #bcbec0;
+    --absolute-black: #414042;
+    --absolute-white: #fefefe;
+    --black-o75: rgba(65,64,66,0.7490196078431373);
+    --white-1: #fcfcfc;
+    --white-2: #f9f9f9;
+    --white-3: #f7f7f7;
+    --white-4: #e6e7e8;
+    --focus-color: #01a2e6;
+    --navbar-height: 3em;
+    --emphasis-color: #e59303;
+    --primary-color: var(--focus-color);
+    --hover-1-color: var(--white-1);
+    --hover-2-color: var(--white-2);
+    --bhd6-color: #193372;
+    --bhd7-color: #1f232d;
+    --bhd10-color: #c11a26;
+    --bhd11-color: #5cabc6;
+    --bhdhinuh-color: #112d0c;
+    --bhd13-color: #132751;
+    --bhd20-color: #ba1924;
+    --border-radius: .3em;
+    --retact-arrow-size: .2em;
+    --margin-start: 6.6vmin;
+}
+
+* {
+    direction: rtl;
+}
