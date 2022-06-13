@@ -199,6 +199,165 @@ openinghours>div>div {
     transform: translateX(2px);
 }
 
+.button.store {
+    width: 10em;
+    padding: 0;
+    border: none;
+    margin: .5em;
+}
+
+.page.transport .shuttle-app .link.google-play {
+    margin-top: 2em;
+}
+
+.button.store>.icon {
+    width: 100%;
+    margin: 0;
+    height: unset;
+}
+
+.button.store.google-play>.icon {
+    width: 115%;
+    margin: -.8em 0;
+}
+
+.shuttle-app > .title {
+	margin-bottom: 0.5rem;
+}
+
+imgdisplay {
+    --transition-time: .5s;
+    position: relative;
+    width: 35vw;
+    display: flex;
+    user-select: none;
+    margin-bottom: 3vmax;
+    height: max-content;
+    height: fit-content;
+}
+
+imgdisplay[display=many] {
+    width: 100%;
+}
+
+imgdisplay>.images {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+imgdisplay>.overlay {
+    pointer-events: none;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+imgdisplay>.images>img, imgdisplay>.overlay {
+    transition: var(--transition-time) ease-in-out;
+    transition-property: transform;
+}
+
+imgdisplay>.images {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+imgdisplay[display=many]>.images>img {
+    min-width: 35vw;
+    margin-inline-end: 2em;
+}
+
+imgdisplay>.overlay {
+    pointer-events: none;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+imgdisplay>.images>img, imgdisplay>.overlay {
+    transition: var(--transition-time) ease-in-out;
+    transition-property: transform;
+}
+
+imgdisplay>.overlay>.prev {
+    transform-origin: calc(50%*(var(--dir-num) + 1));
+    background-image: linear-gradient(var(--dir-to-angle),var(--absolute-black),var(--black-o75) 20%,transparent 75%);
+}
+
+imgdisplay>.overlay>.nav {
+    cursor: pointer;
+    background-size: 100% 100%;
+    width: 5vw;
+    --bg: var(--absolute-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+imgdisplay>.overlay>* {
+    pointer-events: all;
+    transition: var(--transition-time) transform ease-in-out;
+}
+
+imgdisplay.zoom-in>.overlay>.indicators, imgdisplay[display=many]>.overlay>.indicators {
+    --indicators-trans-origin: -3vh;
+    margin-bottom: -4vh;
+}
+
+imgdisplay>.overlay>.indicators {
+    --indicators-trans-origin: -2.5vh;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -3vh;
+    display: flex;
+    left: 50%;
+    transform-origin: center var(--indicators-trans-origin);
+    transform: translate(-50%);
+    transition-property: transform,transform-origin,margin-bottom;
+}
+
+imgdisplay>.overlay>* {
+    pointer-events: all;
+    transition: var(--transition-time) transform ease-in-out;
+}
+
+imgdisplay>.overlay>.next:after, imgdisplay>.overlay>.prev:before {
+    transform: rotate(calc(var(--dir-num)*-45deg));
+}
+
+imgdisplay>.overlay>.nav:after, imgdisplay>.overlay>.nav:before {
+    --size: 2vmax;
+    content: "";
+    width: calc(var(--size)/6);
+    height: var(--size);
+    background-color: var(--bg);
+    margin: calc(var(--size)/-5) 0;
+    border-radius: calc(var(--size)/2);
+}
+
+imgdisplay>.overlay>.next:before, imgdisplay>.overlay>.prev:after {
+    transform: rotate(calc(var(--dir-num)*45deg));
+}
+
+imgdisplay>.overlay>.indicators>div {
+    cursor: pointer;
+    width: .5vmax;
+    height: .5vmax;
+    border-radius: 50%;
+    background-color: var(--grey);
+}
+
 
 @media only screen and (max-width:600px) {
 	.page.transport {

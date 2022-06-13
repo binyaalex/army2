@@ -1,11 +1,13 @@
 import Shuttle from "./Shuttle";
-// import Bases from "./Bases";
+import Public from "./Public";
+import Apps from "./Apps";
 
 const Options = () => {
 	return (
 		<hoverswitch className='options'>
 			<Shuttle />
-			{/*<Bases />*/}
+			<Public />
+			<Apps />
 		</hoverswitch>
 	)
 }
