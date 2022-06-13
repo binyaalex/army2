@@ -37,7 +37,6 @@
 
 .navBtnsList {
   display: flex;
-  flex-direction: row-reverse;
 }
 
 .navBtnDiv {
