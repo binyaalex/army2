@@ -28,3 +28,12 @@ html {
 * {
     direction: rtl;
 }
+
+.rtl {
+    direction: rtl;
+    --dir: "right";
+    --dir-angle: 90deg;
+    --dir-to: "left";
+    --dir-to-angle: -90deg;
+    --dir-num: 1;
+}
