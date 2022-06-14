@@ -1,10 +1,9 @@
-const Public = () => {
+import SmallHeader from "../../repeat/SmallHeader";
+
+const Public = (title) => {
 	return (
 		<div class="focused public-transport prev"> 
-			<decoratedtitle>
-				<div class="title"> תחב"ץ מב"ש לבסיס </div>
-				<img class="title-underline" src="/images/title-black.07ae5174.svg"/>
-			</decoratedtitle> 
+			<SmallHeader title=' תחב"ץ מב"ש לבסיס ' /> 
 			<div class="text"> 
 				<div class="line"> מטרופולין 
 					<div class="emphasis"> קו 170 </div>

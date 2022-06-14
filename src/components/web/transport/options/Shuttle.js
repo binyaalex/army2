@@ -1,3 +1,5 @@
+import SmallHeader from "../../repeat/SmallHeader";
+
 const Shuttle = () => {
 
 	const open = () => {
@@ -15,11 +17,8 @@ const Shuttle = () => {
 	}
 
 	return (
-		<div class="focused shuttle-schedule"> 
-			<decoratedtitle>
-				<div class="title">שאטלים ליום ראשון</div>
-				<img class="title-underline" src="/images/title-black.07ae5174.svg"/>
-			</decoratedtitle> 
+		<div class="focused shuttle-schedule">
+			<SmallHeader title='שאטלים ליום ראשון' /> 
 			<dropdown data="shared.json5#places" defaultvalue="בחר מיקום" tabindex="0"> 
 				<div class="content">
 					<div>
