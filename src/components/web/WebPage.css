@@ -179,3 +179,72 @@ dropdown .retractable {
     font-weight: 700;
     border-radius: .5em;
 }
+
+.main .page .flexible {
+    display: flex;
+}
+
+.main .page .x3.expand {
+    flex: 3;
+}
+
+.main .page .x2.expand {
+    flex: 2;
+}
+
+.emphasis {
+    display: contents;
+    color: var(--emphasis-color);
+    font-weight: 700;
+}
+
+icontext {
+    --icon-width: 6vmin;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+icontext.first-centered>:first-child {
+    align-self: center;
+}
+
+icontext>.icon {
+    width: var(--icon-width);
+    margin-inline-end: calc(var(--max-icon-width, var(--icon-width))/2 - var(--icon-width)/2 + 1em);
+    margin-inline-start: calc(var(--max-icon-width, var(--icon-width))/2 - var(--icon-width)/2);
+}
+
+icontext>:first-child {
+    align-self: flex-start;
+}
+
+icontext>.icon~* {
+    margin: 0;
+}
+
+.main .page .as-content, .main>.scrollable>.page .as-content * {
+    display: contents;
+}
+
+openinghours {
+    display: block;
+    margin: 1em 0;
+}
+
+.main .page .as-content, .main>.scrollable>.page .as-content * {
+    display: contents;
+}
+
+openinghours>div:first-child {
+    margin-inline-start: 0;
+}
+
+openinghours>div {
+    margin: 0 auto;
+}
+
+.main .page .alt-color {
+    --emphasis-color: var(--focus-color);
+}
