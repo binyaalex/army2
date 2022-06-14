@@ -25,7 +25,7 @@ const Dining = () => {
 				<Opening />
 				<ExtraFood />
 			</div>
-			<Gallery imgArr={imgArr} />
+			<Gallery imgArr={imgArr} src='carousell/*.jpg' />
 		</div>
 	)
 }

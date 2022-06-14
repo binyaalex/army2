@@ -3,13 +3,6 @@ import MealDays from "./MealDays";
 
 const Opening = () => {
 
-	const containerArr = [
-		{
-			img: '/images/about/suitcase2.png',
-			text: 'מידע מקיף על בריאותך בזמן ההריון הכולל תזונה נכונה ופעילות גופנית מומלצת ע"י בעלי המקצוע'
-		},
-	]
-
 	const mealsSchedule = [
 		{
 			days: `ימי א' עד ה'`,

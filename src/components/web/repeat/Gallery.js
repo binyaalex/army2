@@ -1,6 +1,6 @@
-const Gallery = ({imgArr}) => {
+const Gallery = ({imgArr, src, titles}) => {
 	return (
-		<imgdisplay display="many" src="/images/carousell/*.jpg">
+		<imgdisplay display="many" src={src} titles={titles} >
 			<div class="images">
 				{
 					imgArr.map((el, i) => {

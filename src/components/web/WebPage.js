@@ -5,6 +5,7 @@ import Footer from "./footer/Footer";
 import Home from "./home/Home";
 import Transport from "./transport/Transport";
 import Dining from "./dining/Dining";
+import Media from "./media/Media";
 
 const WebPage = () => {
   return (
@@ -15,6 +16,7 @@ const WebPage = () => {
             <Route path="home" element={<Home />} />
             <Route path="transport" element={<Transport />} />
             <Route path="dining" element={<Dining />} />
+            <Route path="media" element={<Media />} />
         </Routes>
       {/*</div>*/}
       <Footer />

@@ -19,7 +19,7 @@ const Transport = () => {
 		<div className='page transport'>
 			<Header header='היסעים' text='בעמוד זה תוכלו למצוא את דרכי ההגעה לבסיס והיציאה מהבסיס.' />
 			<Options />
-			<Gallery imgArr={imgArr} />
+			<Gallery imgArr={imgArr} src='carousell/*.jpg' />
 		</div>
 	)
 }
