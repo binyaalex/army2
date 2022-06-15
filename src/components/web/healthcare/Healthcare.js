@@ -7,22 +7,27 @@ import CallCenter from "./CallCenter";
 import DoctorVisit from "./DoctorVisit";
 import Gallery from "../repeat/Gallery";
 
+import { faBriefcaseMedical } from '@fortawesome/free-solid-svg-icons'
+import { faTruckMedical } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faStethoscope } from '@fortawesome/free-solid-svg-icons'
+
 const Healthcare = () => {
 	const NavigatorArr = [
 		{
-			img: '/images/medkit-highlight.3a2b7234.svg',
+			img: faBriefcaseMedical,
 			text: 'מרפאה',
 		},
 		{
-			img: '/images/medical-centre.629be216.svg',
+			img: faTruckMedical,
 			text: 'מרפ"א',
 		},
 		{
-			img: '/images/medical-call-centre.124a4787.svg',
+			img: faHeart,
 			text: 'מקול הלב',
 		},
 		{
-			img: '/images/doctor-visits.13c60dd4.svg',
+			img: faStethoscope,
 			text: 'ביקור רופא',
 		},
 	]

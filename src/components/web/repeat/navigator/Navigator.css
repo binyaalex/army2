@@ -46,8 +46,19 @@
     box-shadow: 0 0 15px .5px hsla(0,0%,99.6%,.6823529411764706);
 }
 
-.page navigatable>.content>.navigator>.big>img {
+.page navigatable>.content>.navigator>.big>svg {
     transform: scale(1.25);
+}
+
+
+.page navigatable>.content>.navigator>.active {
+    color: white;
+}
+
+.page navigatable>.content>.navigator>.NavigatorIcon:hover {
+    color: white;
+    background-color: var(--absolute-black);
+    border-color: var(--absolute-black);
 }
 
 .page navigatable>.content>.navigator>a>img {
