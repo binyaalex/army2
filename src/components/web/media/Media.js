@@ -1,9 +1,7 @@
 import './Media.css';
 import Header from "../repeat/Header";
 import GalleryDiv from "./GalleryDiv";
-// import Introduction from "./introduction/Introduction";
-// import Services from "./Services";
-// import Links from "./Links";
+import Navigator from "./navigator/Navigator";
 
 const Media = () => {
 
@@ -96,6 +94,7 @@ const Media = () => {
 			<Header header='מדיה' text='תמונות של הקריה, נופים, מתקנים, אטרקציות וכו’.' />
 			<navigatable>
 				<div className='content'>
+					<Navigator />
 					{
 						mediaArr.map((el, i) => {
 							return (
@@ -106,16 +105,13 @@ const Media = () => {
 									src={el.src}
 									titles={el.titles}
 									imgArr={el.imgArr}
+									key={i}
 								/>
 							)
 						})
 					}
 				</div>
 			</navigatable>
-			{/*<Video />*/}
-			{/*<Introduction />*/}
-			{/*<Services />*/}
-			{/*<Links />*/}
 		</div>
 	)
 }

@@ -11,14 +11,14 @@ const WebPage = () => {
   return (
     <div className="webPage main">
       <Nav />
-      {/*<div className="scrollable">*/}
+      <div className="scrollable">
         <Routes>
             <Route path="home" element={<Home />} />
             <Route path="transport" element={<Transport />} />
             <Route path="dining" element={<Dining />} />
             <Route path="media" element={<Media />} />
         </Routes>
-      {/*</div>*/}
+      </div>
       <Footer />
     </div>
   );

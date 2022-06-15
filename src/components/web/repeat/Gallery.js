@@ -5,7 +5,7 @@ const Gallery = ({imgArr, src, titles}) => {
 				{
 					imgArr.map((el, i) => {
 						return (
-							<img src={el} />
+							<img src={el} key={i} />
 						)
 					})
 				}
@@ -17,7 +17,7 @@ const Gallery = ({imgArr, src, titles}) => {
 					{
 						imgArr.map((el, i) => {
 							return (
-								<div class="indicator"></div>
+								<div class="indicator" key={i} ></div>
 							)
 						})
 					}

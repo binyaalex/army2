@@ -1,0 +1,69 @@
+
+.navigatorDad {
+	position: absolute;
+}
+
+.page navigatable>.content>.navigator {
+    position: fixed;
+    user-select: none;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.page navigatable>.content>* {
+    padding: 0 var(--margin-start);
+}
+
+.page navigatable>.content>:not(.navigator) {
+    margin-inline-start: 8vmax;
+}
+
+
+.page.media navigatable>.content>.navigator>a {
+    margin: 2vmax 0;
+}
+
+.page navigatable>.content>.navigator>.active {
+    background-color: var(--focus-color);
+    border-color: var(--focus-color);
+}
+
+.page navigatable>.content>.navigator>a {
+    position: relative;
+    cursor: pointer;
+    margin: 3vmax 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4.632vmax;
+    height: 4.632vmax;
+    padding: 1vmax;
+    border-radius: 50%;
+    border: 3px solid var(--absolute-black);
+    background-color: var(--bg);
+    box-shadow: 0 0 15px .5px hsla(0,0%,99.6%,.6823529411764706);
+}
+
+.page navigatable>.content>.navigator>.big>img {
+    transform: scale(1.25);
+}
+
+.page navigatable>.content>.navigator>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.page.media navigatable>.content>.navigator>a>.hover-text {
+    margin-top: .1em;
+    font-size: 1.5vmax;
+}
+
+.page navigatable>.content>.navigator>a>.hover-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-top: .25em;
+    white-space: nowrap;
+}
