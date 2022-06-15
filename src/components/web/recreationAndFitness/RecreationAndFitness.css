@@ -1,0 +1,320 @@
+.page.recreationAndFitnessPage {
+  --bg: var(--absolute-white);
+}
+
+.recreationAndFitnessPage .content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 0px 20px;
+}
+
+.recreationAndFitnessPage .content .navigator {
+  position: fixed;
+  user-select: none;
+  z-index: 1;
+  transform: translate(0, -5%);
+}
+
+.recreationAndFitnessPage .content .navigator a {
+  position: relative;
+  cursor: pointer;
+  margin: 2vmax 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  padding: 1vmax;
+  border-radius: 50%;
+  border: 3px solid var(--absolute-black);
+  background-color: var(--bg);
+  box-shadow: 0 0 15px 0.5px hsl(0deg 0% 100%);
+}
+
+.recreationAndFitnessPage .content .navigator a > img {
+  width: 100%;
+  height: 100%;
+}
+
+.recreationAndFitnessPage .content .navigator .active {
+  background-color: var(--focus-color);
+  border-color: var(--focus-color);
+}
+
+.recreationAndFitnessPage .content .navigator .active .notActiveIcon {
+  display: none;
+}
+
+.recreationAndFitnessPage .content .navigator .active .activeIcon {
+  display: block;
+}
+
+.recreationAndFitnessPage .content .navigator .activeIcon {
+  display: none;
+}
+
+.recreationAndFitnessPage .content .navigator .notActiveIcon {
+  display: block;
+}
+
+.recreationAndFitnessPage .content .navigator a:hover > .notActiveIcon {
+  display: none;
+}
+
+.recreationAndFitnessPage .content .navigator a:hover > .activeIcon {
+  display: block;
+}
+
+.recreationAndFitnessPage .content .navigator a:hover {
+  background-color: var(--absolute-black);
+  border-color: var(--absolute-black);
+}
+
+.recreationAndFitnessPage .content .navigator .hover-text {
+  display: none;
+}
+
+.recreationAndFitnessPage .content .navigator a:hover > .hover-text {
+  display: block;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.25em;
+  white-space: nowrap;
+}
+
+.recreationAndFitnessPage .content .textArea .libraryText {
+  margin-bottom: 4em;
+}
+
+.recreationAndFitnessPage .content .textArea .libraryText .libraryDiv .swiper {
+  width: 32vw;
+  height: 22vw;
+  float: right;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .libraryDiv
+  .swiper
+  img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recreationAndFitnessPage .content .textArea .libraryText .titleDiv {
+  color: var(--focus-color);
+  margin-bottom: 1em;
+  margin-top: 4em;
+  display: block;
+  line-height: 1.2;
+}
+
+.recreationAndFitnessPage .content .textArea .libraryText .title {
+  font-size: 3.75vmax;
+  font-family: SecularOne;
+}
+
+.recreationAndFitnessPage .content .textArea .libraryText .titleUnderline {
+  height: 0.3vmax;
+  margin-bottom: 1em;
+  user-select: none;
+}
+
+.recreationAndFitnessPage .content .textArea {
+  margin-inline-start: 8vmax;
+}
+
+.recreationAndFitnessPage .content .textArea .libraryText .details {
+  padding-inline-start: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.recreationAndFitnessPage .content .textArea .libraryText .details .flexible {
+  display: flex;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexible
+  .detailsTimeImgDiv {
+  margin-top: 0;
+  align-items: flex-start;
+  --icon-width: 6vmin;
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexible
+  img {
+  width: var(--icon-width);
+  margin-inline-end: calc(
+    var(--max-icon-width, var(--icon-width)) / 2 - var(--icon-width) / 2 + 1em
+  );
+  margin-inline-start: calc(
+    var(--max-icon-width, var(--icon-width)) / 2 - var(--icon-width) / 2
+  );
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexible
+  .detailsTimeImgDiv
+  .detailsTimeTextDiv {
+  display: flex;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexible
+  .detailsTimeImgDiv
+  .detailsTimeTextDiv
+  div {
+  display: flex;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexible
+  .detailsTimeImgDiv
+  .detailsTimeTextDiv
+  div
+  .emphasis {
+  display: contents;
+  color: var(--emphasis-color);
+  font-weight: 700;
+  margin-inline-start: 0.25em;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexible
+  .detailsTimeImgDiv
+  .detailsTimeTextDiv
+  div
+  .detailsTimeTextDivTime {
+  display: inline;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .detailsPhoneImgDiv {
+  margin-inline-start: 2em;
+  margin-top: 1em;
+  align-items: flex-start;
+  --icon-width: 6vmin;
+  display: flex;
+  margin-bottom: 0em;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexible
+  .detailsPhoneImgDiv
+  .detailsPhoneImgDivLink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexible
+  .detailsPhoneImgDiv
+  .detailsPhoneImgDivLink
+  .detailsPhoneImgDivLinkNumber {
+  margin-top: auto;
+  margin-bottom: 0;
+  color: var(--focus-color);
+  display: inline;
+  border-bottom: 3px solid;
+  font-weight: 700;
+}
+
+.recreationAndFitnessPage .content .textArea .libraryText .details .flexEnd {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexEnd
+  .titleDiv {
+  display: block;
+  line-height: 1.2;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexEnd
+  .titleDiv
+  .title {
+  font-family: SecularOne;
+  font-size: 3vmax;
+  color: black;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexEnd
+  .titleDiv
+  .titleUnderline {
+  height: 0.3vmax;
+  margin-bottom: 1em;
+  user-select: none;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .libraryText
+  .details
+  .flexEnd
+  .flexEndTextDiv
+  .emphasis {
+  display: contents;
+  color: var(--emphasis-color);
+  font-weight: 700;
+}
