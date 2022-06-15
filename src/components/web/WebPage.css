@@ -198,6 +198,10 @@ dropdown .retractable {
     font-weight: 700;
 }
 
+.emphasis.inline {
+    display: inline;
+}
+
 icontext {
     --icon-width: 6vmin;
     display: flex;

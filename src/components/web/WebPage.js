@@ -6,6 +6,7 @@ import Home from "./home/Home";
 import Transport from "./transport/Transport";
 import Dining from "./dining/Dining";
 import Services from "./services/Services";
+import Healthcare from "./healthcare/Healthcare";
 import Media from "./media/Media";
 
 const WebPage = () => {
@@ -18,6 +19,7 @@ const WebPage = () => {
             <Route path="transport" element={<Transport />} />
             <Route path="dining" element={<Dining />} />
             <Route path="services" element={<Services />} />
+            <Route path="healthcare" element={<Healthcare />} />
             <Route path="media" element={<Media />} />
         </Routes>
       </div>
