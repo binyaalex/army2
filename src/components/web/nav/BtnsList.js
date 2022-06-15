@@ -4,7 +4,7 @@ const BtnsList = () => {
 
 	const btnsListArr = [
 		{
-			link: '/web/page/home',
+			link: '/web/page/',
 			text: 'קריית ההדרכה '
 		},
 		{

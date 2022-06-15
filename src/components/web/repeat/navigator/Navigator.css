@@ -7,7 +7,7 @@
     position: fixed;
     user-select: none;
     z-index: 1;
-    top: 50%;
+    top: 65%;
     transform: translate(0, -50%);
 }
 

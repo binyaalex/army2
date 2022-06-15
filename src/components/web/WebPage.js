@@ -5,6 +5,7 @@ import Footer from "./footer/Footer";
 import Home from "./home/Home";
 import Transport from "./transport/Transport";
 import Dining from "./dining/Dining";
+import Services from "./services/Services";
 import Media from "./media/Media";
 
 const WebPage = () => {
@@ -13,9 +14,10 @@ const WebPage = () => {
       <Nav />
       <div className="scrollable">
         <Routes>
-            <Route path="home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="transport" element={<Transport />} />
             <Route path="dining" element={<Dining />} />
+            <Route path="services" element={<Services />} />
             <Route path="media" element={<Media />} />
         </Routes>
       </div>

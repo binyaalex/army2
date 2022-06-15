@@ -249,3 +249,27 @@ openinghours>div {
     --emphasis-color: var(--focus-color);
 }
 
+.main>.scrollable>.page .flexible.col {
+    flex-direction: column;
+}
+
+.main>.scrollable>.page .x4.expand {
+    flex: 4;
+}
+
+.main>.scrollable>.page .flex-end {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.main>.scrollable>.page .flex-end>:last-child, .main>.scrollable>.page .flex-end>:last-child :last-child, .main>.scrollable>.page .flex-start {
+    margin-bottom: 0;
+}
+
+.main>.scrollable>.page .x5.expand {
+    flex: 5;
+}
+
+.main>.scrollable>.page .expand {
+    flex: 1;
+}
