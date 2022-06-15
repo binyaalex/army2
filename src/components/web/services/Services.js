@@ -5,19 +5,23 @@ import Faults from "./Faults";
 import Religion from "./Religion";
 import Navigator from "../repeat/navigator/Navigator";
 
+import { faScissors } from '@fortawesome/free-solid-svg-icons'
+import { faWrench } from '@fortawesome/free-solid-svg-icons'
+import { faStarOfDavid } from '@fortawesome/free-solid-svg-icons'
+
 const Services = () => {
 
 	const NavigatorArr = [
 		{
-			img: '/images/scissors-highlight.bd894641.svg',
+			img: faScissors,
 			text: 'מספרה',
 		},
 		{
-			img: '/images/tickets.a7b87c29.svg',
+			img: faWrench,
 			text: 'תקלות',
 		},
 		{
-			img: '/images/religion.9cc2484c.svg',
+			img: faStarOfDavid,
 			text: 'רבנות',
 		},
 	]

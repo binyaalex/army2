@@ -1,11 +1,33 @@
+import React, { useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 const NavigatorBtn = ({img, text, i}) => {
-	let className = 'big'
+	let className = 'big NavigatorIcon'
 	if (i === 0) {
-		className = 'active'
+		className = 'active NavigatorIcon'
 	}
+
+	
+	// const imgElement = document.querySelector(className);
+	// let changeImg = ''
+	// let src = img
+	// useEffect(() => {
+
+	// 	console.log(imgElement)
+	// 	let hover = ''
+	// 	changeImg = () => {
+	// 		console.log(1)
+	// 		imgElement.src = hover
+	// 		console.log(imgElement.src)
+	// 	}
+
+	// },[]);
+
 	return (
 		<a className={className} >
-			<img src={img} draggable="false"/>
+			<FontAwesomeIcon icon={img} className='' > </FontAwesomeIcon>
+			{/*<img src={img} draggable="false"/>*/}
 			<div class="hover-text">{text}</div>
 		</a>
 	)
