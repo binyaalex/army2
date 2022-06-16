@@ -191,6 +191,7 @@
   .detailsTimeTextDiv
   div {
   display: flex;
+  margin-right: 5px;
 }
 
 .recreationAndFitnessPage
@@ -584,6 +585,11 @@
   font-weight: 700;
 }
 
+.recreationAndFitnessPage .content .textArea .gymText .accordionDiv .gymContent .gymImageAndText .details .timeDiv .openingHours
+  .hoursOne div:last-child, .hoursTwo div:last-child, .hoursThree div:last-child {
+    margin-right: 5px;
+}
+
 .recreationAndFitnessPage
   .content
   .textArea
@@ -668,8 +674,8 @@
   .accordionDiv
   .accordion-button::after {
   margin-left: 10px;
-  width: 1.75vmax;
-  height: 1.75vmax;
+  width: 2.75vmax;
+  height: 2.75vmax;
   background-size: 1.75rem;
 }
 

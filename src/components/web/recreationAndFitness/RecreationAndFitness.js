@@ -194,7 +194,7 @@ const RecreationAndFitness = () => {
                               <div className="openingHours">
                                 <div className="hoursOne">
                                   <div class="emphasis">א׳ - ד׳: </div>
-                                  <div>22:00 - 07:00</div>
+                                  <div> 22:00 - 07:00 </div>
                                 </div>
                                 <div className="hoursTwo">
                                   <div class="emphasis">ה׳: </div>
@@ -245,7 +245,7 @@ const RecreationAndFitness = () => {
                             </div>
                             <div className="prepNote">
                               <div className="titleDiv">
-                                <div className="title"> שיבוצי שעות</div>
+                                <div className="title">הגיעו מוכנים</div>
                                 <img
                                   className="titleUnderline"
                                   src={textUnderlineBlack}
@@ -255,30 +255,30 @@ const RecreationAndFitness = () => {
                                 <div className="contentTopped">
                                   <img src={register} className="icon" alt="register" /> 
                                   הכניסה לחדר הכושר מותנת בהצגת 
-                                  <div class="emphasis">מנוי וחוגר בלבד </div> 
+                                  <div class="emphasis"> מנוי וחוגר בלבד </div> 
                                 </div>
                                 <div className="contentTopped">
                                   <img src={close} className="icon" alt="close" />
-                                  <div class="emphasis">אין להכנס</div>
+                                  <div class="emphasis">אין להכנס </div>
                                   לחדר הכושר 
-                                  <div class="emphasis">ללא מדריך</div>
+                                  <div class="emphasis"> ללא מדריך </div>
                                   נוכח או 
-                                  <div class="emphasis">לאחר שעות הפעילות</div>
+                                  <div class="emphasis"> לאחר שעות הפעילות</div>
                                 </div>
                                 <div className="contentTopped">
                                <img src={towel} class="icon" alt="towel" />
                                 כל מתאמן מחויב להגיע
                                 <br /> על 
-                                 <div class="emphasis">מדי ספורט תקניים</div>
+                                 <div class="emphasis"> מדי ספורט תקניים</div>
                                   <br /> ועם 
-                                  <div class="emphasis">מגבת אישית</div>
+                                  <div class="emphasis"> מגבת אישית</div>
                                 </div>
                                 <div className="contentTopped">
                                 <img src={doctor} class="icon" alt="doctor" />
                                   כל מתאמן 
-                                  <div class="emphasis">מעל גיל 23 </div>
+                                  <div class="emphasis"> מעל גיל 23 </div>
                                    או מתחת 
-                                   <div class="emphasis">לפרופיל 72</div>
+                                   <div class="emphasis"> לפרופיל 72 </div>
                                     נדרש 
                                     <div class="emphasis"> לאישור רופא </div>
                                      המאשר לו פעילות בחד”כ.
@@ -365,12 +365,12 @@ const RecreationAndFitness = () => {
                           <div className="altColor">
                             <div>
                               3 חדרי סטודיו שונים עם
-                              <div class="emphasis">מראות ומערכת שמע</div>.
+                              <div class="emphasis"> מראות ומערכת שמע</div>.
                             </div>
                             <br />
                             <div>
                               אחד מחדרי הסטודיו מותאם
-                              <div class="emphasis">לשיעורי ספינינג </div>
+                              <div class="emphasis"> לשיעורי ספינינג </div>
                               הכולל מספר רב של אופני ספינינג.
                             </div>
                             <div className="flexEnd">
@@ -452,11 +452,9 @@ const RecreationAndFitness = () => {
                         <div className="details">
                           <div className="flexStart">
                             מחוץ לקריית הספורט ישנם
-                            <div className="emphasis">8 חלקות מגרשים</div>,
+                            <div className="emphasis"> 8 חלקות מגרשים</div>,
                             הניתנים
-                            <div className="emphasis">
-                              לתיאום מול מדא”ג הבה”ד
-                            </div>
+                            <div className="emphasis"> לתיאום מול מדא”ג הבה”ד</div>
                             .
                             <br />
                             בקשה לשריון מגרש תעשה
