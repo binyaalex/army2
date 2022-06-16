@@ -55,7 +55,7 @@
 
 .page.home .training-bases {
     flex:15;
-    height:54vh;
+    height:100%;
     overflow:auto
 }
 
@@ -418,10 +418,15 @@
 .video-display>.overlay>.play {
     margin: 0 auto;
     cursor: pointer;
+    height: 100%;
 }
 
 .video-display>.overlay>.play>img {
     width: 6vw;
+}
+
+.video-display>.overlay>.play>video {
+    height: 100%;
 }
 
 .page.home>.introduction {
@@ -507,12 +512,6 @@ hoverswitch>div {
 .button>.icon {
     height: 1em;
     margin: .2em;
-}
-
-.page.home .training-bases {
-    flex: 15;
-    /*height: 54vh;*/
-    overflow: auto;
 }
 
 hoverswitch>.focused {
