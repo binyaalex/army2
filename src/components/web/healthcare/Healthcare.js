@@ -5,7 +5,7 @@ import Clinic from "./Clinic";
 import Medical from "./Medical";
 import CallCenter from "./CallCenter";
 import DoctorVisit from "./DoctorVisit";
-import Gallery from "../repeat/Gallery";
+import GallerySwiper from "../repeat/gallerySwiper/GallerySwiper";
 
 import { faBriefcaseMedical } from '@fortawesome/free-solid-svg-icons'
 import { faTruckMedical } from '@fortawesome/free-solid-svg-icons'
@@ -33,18 +33,54 @@ const Healthcare = () => {
 	]
 
 	const imgArr = [
-		'/images/710_8865.000b4723.jpg',
-		'/images/750_0129.7ae763e8.jpg',
-		'/images/750_0131.897d7e78.jpg',
-		'/images/750_9254.0ca91f7e.jpg',
-		'/images/_TIL1832.25fa8d51.jpg',
-		'/images/_TIL1836.a2c5bbdf.jpg',
-		'/images/_TIL1837.47be2d63.jpg',
-		'/images/_TIL1856.2c4fd9a3.jpg',
-		'/images/_TIL1854.1c4d3ef1.jpg',
-		'/images/_TIL1861.c93045b5.jpg',
-		'/images/_TIL7847.0ec0f366.jpg',
-		'/images/_TIL7875.d447ff4c.jpg',
+		{
+			img: '/images/710_8865.000b4723.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/750_0129.7ae763e8.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/750_0131.897d7e78.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/750_9254.0ca91f7e.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/_TIL1832.25fa8d51.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/_TIL1836.a2c5bbdf.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/_TIL1837.47be2d63.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/_TIL1856.2c4fd9a3.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/_TIL1854.1c4d3ef1.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/_TIL1861.c93045b5.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/_TIL7847.0ec0f366.jpg',
+			className: 'bigGallery',
+		},
+		{
+			img: '/images/_TIL7875.d447ff4c.jpg',
+			className: 'bigGallery',
+		},
 	]
 
 	return (
@@ -59,7 +95,7 @@ const Healthcare = () => {
 					<DoctorVisit />
 				</div>
 			</navigatable>
-			<Gallery imgArr={imgArr} src='carousell/*.jpg' />
+			<GallerySwiper imgArr={imgArr} slidesPerView={3} className='mySwiper bigGallery' />
 		</div>
 	)
 }

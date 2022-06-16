@@ -6,7 +6,7 @@
 .page navigatable>.content>.navigator {
     position: fixed;
     user-select: none;
-    z-index: 1;
+    z-index: 2;
     top: 65%;
     transform: translate(0, -50%);
 }

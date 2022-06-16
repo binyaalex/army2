@@ -18,7 +18,7 @@ const GallerySwiper = ({imgArr, slidesPerView, className}) => {
 	            clickable: true,
 	          }}
 	          modules={[Pagination]}
-	          className="mySwiper bigGallery"
+	          className={className}
 	        >
 	        	{
 					imgArr.map((el, i) => {
