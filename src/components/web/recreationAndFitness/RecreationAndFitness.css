@@ -85,6 +85,7 @@
 
 .recreationAndFitnessPage .content .textArea .libraryText {
   margin-bottom: 4em;
+  clear: both;
 }
 
 .recreationAndFitnessPage .content .textArea .libraryText .libraryDiv .swiper {
@@ -318,3 +319,309 @@
   color: var(--emphasis-color);
   font-weight: 700;
 }
+
+.recreationAndFitnessPage .content .textArea .poolText {
+  margin-bottom: 4em;
+}
+
+.recreationAndFitnessPage .content .textArea .poolText .titleDiv {
+  color: var(--focus-color);
+  margin-bottom: 1em;
+  margin-top: 4em;
+  display: block;
+  line-height: 1.2;
+}
+
+.recreationAndFitnessPage .content .textArea .poolText .title {
+  font-size: 3.75vmax;
+  font-family: SecularOne;
+}
+
+.recreationAndFitnessPage .content .textArea .poolText .titleUnderline {
+  height: 0.3vmax;
+  margin-bottom: 1em;
+  user-select: none;
+}
+
+.recreationAndFitnessPage .content .textArea .poolText .poolDiv .swiper {
+  width: 32vw;
+  height: 22vw;
+  float: right;
+}
+
+.recreationAndFitnessPage .content .textArea .poolText .poolDiv .swiper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recreationAndFitnessPage .content .textArea .poolText .details {
+  padding-inline-start: 3em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.recreationAndFitnessPage .content .textArea .poolText .details .contentTopped {
+  flex: 1;
+  margin-top: 0;
+  align-items: flex-start;
+  --icon-width: 6vmin;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .contentTopped
+  .icon {
+  height: 4vmax;
+  width: var(--icon-width);
+  margin-inline-end: calc(
+    var(--max-icon-width, var(--icon-width)) / 2 - var(--icon-width) / 2 + 1em
+  );
+  margin-inline-start: calc(
+    var(--max-icon-width, var(--icon-width)) / 2 - var(--icon-width) / 2
+  );
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .contentTopped
+  .openingHours {
+  flex: 1;
+  margin-top: 0;
+  display: flex;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .contentTopped
+  .openingHours
+  div {
+  margin: 0 auto;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .contentTopped
+  .openingHours
+  .emphasis {
+  display: contents;
+  color: var(--emphasis-color);
+  font-weight: 700;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .contentTopped
+  .openingHours
+  .hoursOne {
+  display: flex;
+  margin-inline-start: 0;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .contentTopped
+  .openingHours
+  .hoursTwo {
+  display: flex;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .contentTopped
+  .openingHours
+  .hoursThree {
+  display: flex;
+}
+
+.recreationAndFitnessPage .content .textArea .poolText .details .titleDiv {
+  margin-bottom: 0;
+  display: block;
+  line-height: 1.2;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .titleDiv
+  .title {
+  font-family: SecularOne;
+  font-size: 3vmax;
+  color: black;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .titleDiv
+  .titleUnderline {
+  height: 0.3vmax;
+  margin-bottom: 1em;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.recreationAndFitnessPage .content .textArea .poolText .details .flexible {
+  display: flex;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .flexible
+  .noBottomMargin {
+  flex: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  --icon-width: 6vmin;
+  display: flex;
+  align-items: center;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .flexible
+  .noBottomMargin
+  img {
+  height: 4vmax;
+  width: var(--icon-width);
+  margin-inline-end: calc(
+    var(--max-icon-width, var(--icon-width)) / 2 - var(--icon-width) / 2 + 1em
+  );
+  margin-inline-start: calc(
+    var(--max-icon-width, var(--icon-width)) / 2 - var(--icon-width) / 2
+  );
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .flexible
+  .noBottomMargin
+  .openingHours {
+    flex: 1;
+    margin-top: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .flexible
+  .noBottomMargin
+  .openingHours
+  .hoursOne {
+    margin-inline-start: 0;
+    margin: 0 auto;
+  }
+
+  .recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .flexible
+  .noBottomMargin
+  .openingHours
+  .hoursOne div {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .flexible
+  .noBottomMargin
+  .openingHours
+  .hoursOne
+  .emphasis {
+    display: contents;
+    color: var(--emphasis-color);
+    font-weight: 700;
+  }
+
+  .recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .flexible
+  .noBottomMargin
+  .openingHours
+  .hoursTwo {
+    margin-inline-start: 0;
+    margin: 0 auto;
+  }
+
+  .recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .flexible
+  .noBottomMargin
+  .openingHours
+  .hoursTwo div {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .recreationAndFitnessPage
+  .content
+  .textArea
+  .poolText
+  .details
+  .flexible
+  .noBottomMargin
+  .openingHours
+  .hoursTwo
+  .emphasis {
+    display: contents;
+    color: var(--emphasis-color);
+    font-weight: 700;
+  }
+
