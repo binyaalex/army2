@@ -721,6 +721,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .imageDisplay
   .swiper {
   width: 32vw;
@@ -734,6 +735,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .imageDisplay
   .swiper
   img {
@@ -748,6 +750,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details {
   padding-inline-start: 3em;
   flex: 1 1;
@@ -762,6 +765,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   img {
   --icon-width: 5.25vmin;
@@ -780,6 +784,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .timeDiv {
   --icon-width: 6vmin;
@@ -795,6 +800,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .timeDiv
   .openingHours {
@@ -807,6 +813,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .timeDiv
   .openingHours
@@ -822,6 +829,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .timeDiv
   .openingHours
@@ -835,6 +843,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .timeDiv
   .openingHours
@@ -848,6 +857,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .timeDiv
   .openingHours
@@ -861,6 +871,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .timeDiv
   img {
@@ -873,6 +884,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .registerDiv {
   display: flex;
@@ -887,6 +899,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .registerDiv
   img {
@@ -899,6 +912,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .registerDiv
   .openingHours {
@@ -911,6 +925,7 @@
   .gymText
   .accordionDiv
   .gymContent
+  .gymImageAndText
   .details
   .registerDiv
   .openingHours
@@ -919,6 +934,272 @@
   color: var(--emphasis-color);
   font-weight: 700;
 }
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .date {
+  color: var(--focus-color);
+  font-size: 0.8em;
+  margin-top: 5em;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility {
+  margin-bottom: 6em;
+  display: flex;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .bhdSchedule {
+  flex: 0 1 32vmax;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .bhdSchedule
+  .titleDiv {
+  display: block;
+  line-height: 1.2;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .bhdSchedule
+  .titleDiv
+  .title {
+  font-family: SecularOne;
+  font-size: 3vmax;
+  color: black;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .bhdSchedule
+  .titleDiv
+  .titleUnderline {
+  height: 0.3vmax;
+  margin-bottom: 1em;
+  user-select: none;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .bhdSchedule
+  .coronaWarn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .bhdSchedule
+  .coronaWarn
+  .warnSign {
+  font-size: 2.5em;
+  background-color: var(--absolute-white);
+  padding: 0.1em 0.6em 0;
+  margin-bottom: -0.9em;
+  border-radius: 50%;
+  position: relative;
+  border: 0.1em solid var(--absolute-black);
+  font-family: SecularOne;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .bhdSchedule
+  .coronaWarn
+  .warnBody {
+  background-color: var(--absolute-black);
+  color: var(--emphasis-color);
+  text-align: center;
+  padding: 2em 2em 1em;
+  font-size: 1.1em;
+  font-weight: 700;
+  border-radius: 0.5em;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .bhdSchedule
+  .emphasis {
+  display: contents;
+  color: var(--emphasis-color);
+  font-weight: 700;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .prepNote
+  .titleDiv {
+  display: block;
+  line-height: 1.2;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .prepNote
+  .titleDiv
+  .title {
+  font-family: SecularOne;
+  font-size: 3vmax;
+  color: black;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .prepNote
+  .titleDiv
+  .titleUnderline {
+  height: 0.3vmax;
+  margin-bottom: 1em;
+  user-select: none;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .prepNote {
+  margin-inline-start: auto;
+  flex: 2 0 48vmax;
+  max-width: 48.4vmax;
+  --emphasis-color: var(--focus-color);
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .prepNote
+  .notes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .prepNote
+  .notes
+  .contentTopped {
+    width: 50%;
+    margin: 0 0 6.5% auto;
+    align-items: flex-start;
+    --icon-width: 6vmin;
+    display: flex;
+  }
+
+  .recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .gymFacility
+  .prepNote
+  .notes
+  .contentTopped img {
+    width: 3.4em;
+    margin-inline-end: calc(var(--max-icon-width, var(--icon-width))/2 - var(--icon-width)/2 + 1em);
+    margin-inline-start: calc(var(--max-icon-width, var(--icon-width))/2 - var(--icon-width)/2);
+    align-self: flex-start;
+    --icon-width: 6vmin;
+  }
 
 .recreationAndFitnessPage
   .content
