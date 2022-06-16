@@ -33,7 +33,7 @@ const Clothes = () => {
 								<a class="link" href="tel: +97273-3772730"> 
 									<div class="text"> 073-3772730</div> 
 								</a> 
-								<div>או</div> 
+								<div> או </div> 
 								<a class="link" href="tel: +97273-3772729"> 
 									<div class="text">073-3772729</div> 
 								</a> 

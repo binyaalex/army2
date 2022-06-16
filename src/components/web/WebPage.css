@@ -228,6 +228,10 @@ icontext>.icon~* {
     margin: 0;
 }
 
+icontext>.icon~.link, icontext>.icon~.link+* {
+    margin-inline-start: .5em;
+}
+
 .main .page .as-content, .main>.scrollable>.page .as-content * {
     display: contents;
 }
@@ -276,4 +280,8 @@ openinghours>div {
 
 .main>.scrollable>.page .expand {
     flex: 1;
+}
+
+.main>.scrollable>.page .no-start-margin, .main>.scrollable>.page .no-start-margin *, .main>.scrollable>.page .no-start-margin-inside :last-child {
+    margin-inline-start: 0;
 }
