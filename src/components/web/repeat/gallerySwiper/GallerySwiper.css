@@ -1,0 +1,11 @@
+.swiperDiv .swiper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiperDiv .swiper {
+    width: 32vw;
+    height: 22vw;
+    float: right;
+}
