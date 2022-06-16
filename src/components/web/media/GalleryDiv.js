@@ -5,7 +5,7 @@ const GalleryDiv = ({icon, displayname, header, imgArr, src, titles}) => {
 	return (
 		<div icon={icon} displayname={displayname}>
 			<SmallHeader title={header} />
-			<GallerySwiper imgArr={imgArr} slidesPerView={3} className='bigGallery' />
+			<GallerySwiper imgArr={imgArr} slidesPerView={3} className='mySwiper bigGallery' />
 		</div>
 	)
 }

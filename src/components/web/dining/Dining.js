@@ -46,7 +46,7 @@ const Dining = () => {
 				<Opening />
 				<ExtraFood />
 			</div>
-			<GallerySwiper imgArr={imgArr} slidesPerView={3} className='bigGallery' />
+			<GallerySwiper imgArr={imgArr} slidesPerView={3} className='mySwiper bigGallery' />
 		</div>
 	)
 }
