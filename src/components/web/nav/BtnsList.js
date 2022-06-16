@@ -28,7 +28,7 @@ const BtnsList = () => {
 			text: 'שירותים כלליים'
 		},
 		{
-			link: '/web/page/military-gear',
+			link: '/web/page/equipment',
 			text: 'ציוד צבאי'
 		},
 		{
