@@ -1495,3 +1495,11 @@
   margin-bottom: 15em;
   max-width: 25em;
 }
+
+.swiper .swiper-button-next, .swiper .swiper-button-prev {
+  color: white;
+}
+
+.swiper .swiper-button-next:after, .swiper .swiper-button-prev:after {
+  font-weight: 700;
+} 

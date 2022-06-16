@@ -11,9 +11,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 import Accordion from "react-bootstrap/Accordion";
 
@@ -135,10 +136,16 @@ const RecreationAndFitness = () => {
                           <div className="imageDisplay">
                             <Swiper
                               spaceBetween={30}
+                              centeredSlides={true}
+                              autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                              }}
                               pagination={{
                                 clickable: true,
                               }}
-                              modules={[Pagination]}
+                              navigation={true}
+                              modules={[Autoplay, Pagination, Navigation]}
                               className="mySwiper"
                             >
                               <SwiperSlide>
@@ -253,35 +260,43 @@ const RecreationAndFitness = () => {
                               </div>
                               <div className="notes">
                                 <div className="contentTopped">
-                                  <img src={register} className="icon" alt="register" /> 
-                                  הכניסה לחדר הכושר מותנת בהצגת 
-                                  <div class="emphasis">מנוי וחוגר בלבד </div> 
+                                  <img
+                                    src={register}
+                                    className="icon"
+                                    alt="register"
+                                  />
+                                  הכניסה לחדר הכושר מותנת בהצגת
+                                  <div class="emphasis">מנוי וחוגר בלבד </div>
                                 </div>
                                 <div className="contentTopped">
-                                  <img src={close} className="icon" alt="close" />
+                                  <img
+                                    src={close}
+                                    className="icon"
+                                    alt="close"
+                                  />
                                   <div class="emphasis">אין להכנס</div>
-                                  לחדר הכושר 
+                                  לחדר הכושר
                                   <div class="emphasis">ללא מדריך</div>
-                                  נוכח או 
+                                  נוכח או
                                   <div class="emphasis">לאחר שעות הפעילות</div>
                                 </div>
                                 <div className="contentTopped">
-                               <img src={towel} class="icon" alt="towel" />
-                                כל מתאמן מחויב להגיע
-                                <br /> על 
-                                 <div class="emphasis">מדי ספורט תקניים</div>
-                                  <br /> ועם 
+                                  <img src={towel} class="icon" alt="towel" />
+                                  כל מתאמן מחויב להגיע
+                                  <br /> על
+                                  <div class="emphasis">מדי ספורט תקניים</div>
+                                  <br /> ועם
                                   <div class="emphasis">מגבת אישית</div>
                                 </div>
                                 <div className="contentTopped">
-                                <img src={doctor} class="icon" alt="doctor" />
-                                  כל מתאמן 
+                                  <img src={doctor} class="icon" alt="doctor" />
+                                  כל מתאמן
                                   <div class="emphasis">מעל גיל 23 </div>
-                                   או מתחת 
-                                   <div class="emphasis">לפרופיל 72</div>
-                                    נדרש 
-                                    <div class="emphasis"> לאישור רופא </div>
-                                     המאשר לו פעילות בחד”כ.
+                                  או מתחת
+                                  <div class="emphasis">לפרופיל 72</div>
+                                  נדרש
+                                  <div class="emphasis"> לאישור רופא </div>
+                                  המאשר לו פעילות בחד”כ.
                                 </div>
                               </div>
                             </div>
@@ -297,10 +312,16 @@ const RecreationAndFitness = () => {
                         <div className="imageDisplay">
                           <Swiper
                             spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                              delay: 2500,
+                              disableOnInteraction: false,
+                            }}
                             pagination={{
                               clickable: true,
                             }}
-                            modules={[Pagination]}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
                           >
                             <SwiperSlide>
@@ -381,10 +402,10 @@ const RecreationAndFitness = () => {
                               />
                               <div>
                                 אימוני סטודיו זמינים לכל הבהדים בתאום מול ירין:
-                                <Link class="link" to={"tel:97254-467-5273"}>
+                                <a class="link" href="tel:97254-467-5273">
                                   {" "}
                                   <div class="text">054-467-5273</div>{" "}
-                                </Link>
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -399,10 +420,16 @@ const RecreationAndFitness = () => {
                         <div className="imageDisplay">
                           <Swiper
                             spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                              delay: 2500,
+                              disableOnInteraction: false,
+                            }}
                             pagination={{
                               clickable: true,
                             }}
-                            modules={[Pagination]}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
                           >
                             <SwiperSlide>
@@ -477,10 +504,16 @@ const RecreationAndFitness = () => {
                         <div className="imageDisplay">
                           <Swiper
                             spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                              delay: 2500,
+                              disableOnInteraction: false,
+                            }}
                             pagination={{
                               clickable: true,
                             }}
-                            modules={[Pagination]}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
                           >
                             <SwiperSlide>
@@ -530,10 +563,16 @@ const RecreationAndFitness = () => {
               <div className="poolDiv">
                 <Swiper
                   spaceBetween={30}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
                   pagination={{
                     clickable: true,
                   }}
-                  modules={[Pagination]}
+                  navigation={true}
+                  modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper"
                 >
                   <SwiperSlide>
@@ -616,10 +655,16 @@ const RecreationAndFitness = () => {
               <div className="libraryDiv">
                 <Swiper
                   spaceBetween={30}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
                   pagination={{
                     clickable: true,
                   }}
-                  modules={[Pagination]}
+                  navigation={true}
+                  modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper"
                 >
                   <SwiperSlide>
@@ -680,14 +725,14 @@ const RecreationAndFitness = () => {
                     />
                     <div>
                       אתי הספרנית:
-                      <Link
+                      <a
                         className="detailsPhoneImgDivLink"
-                        to={"tel:+972523393349"}
+                        href="tel:+972523393349"
                       >
                         <div className="detailsPhoneImgDivLinkNumber">
                           0523393349
                         </div>
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
