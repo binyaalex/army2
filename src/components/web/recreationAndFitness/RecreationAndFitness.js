@@ -15,13 +15,17 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-import gymNotActive from "../../../assets/images/recreationAndFitness/gym-not-active.svg";
-import libraryNotActive from "../../../assets/images/recreationAndFitness/library-not-active.svg";
-import poolNotActive from "../../../assets/images/recreationAndFitness/pool-not-active.svg";
+import Accordion from "react-bootstrap/Accordion";
 
-import gymActive from "../../../assets/images/recreationAndFitness/gym-active.svg";
-import libraryActive from "../../../assets/images/recreationAndFitness/library-active.svg";
-import poolActive from "../../../assets/images/recreationAndFitness/pool-active.svg";
+import { Link } from "react-router-dom";
+
+import gymNotActive from "../../../assets/images/icon/gym-not-active.svg";
+import libraryNotActive from "../../../assets/images/icon/library-not-active.svg";
+import poolNotActive from "../../../assets/images/icon/pool-not-active.svg";
+
+import gymActive from "../../../assets/images/icon/gym-active.svg";
+import libraryActive from "../../../assets/images/icon/library-active.svg";
+import poolActive from "../../../assets/images/icon/pool-active.svg";
 
 import library1 from "../../../assets/images/recreationAndFitness/library/library1.jpg";
 import library2 from "../../../assets/images/recreationAndFitness/library/library2.jpg";
@@ -44,11 +48,45 @@ import pool1 from "../../../assets/images/recreationAndFitness/pool/pool1.jpg";
 import pool2 from "../../../assets/images/recreationAndFitness/pool/pool2.jpg";
 import pool3 from "../../../assets/images/recreationAndFitness/pool/pool3.jpg";
 
-import girl from "../../../assets/images/recreationAndFitness/girl.svg";
-import boy from "../../../assets/images/recreationAndFitness/boy.svg";
+import girl from "../../../assets/images/icon/girl.svg";
+import boy from "../../../assets/images/icon/boy.svg";
 
-import Accordion from "react-bootstrap/Accordion";
-import { Link } from "react-router-dom";
+import gym1 from "../../../assets/images/recreationAndFitness/gym/gym/gym1.jpg";
+import gym2 from "../../../assets/images/recreationAndFitness/gym/gym/gym2.jpg";
+import gym3 from "../../../assets/images/recreationAndFitness/gym/gym/gym3.jpg";
+import gym4 from "../../../assets/images/recreationAndFitness/gym/gym/gym4.jpg";
+import gym5 from "../../../assets/images/recreationAndFitness/gym/gym/gym5.jpg";
+import gym6 from "../../../assets/images/recreationAndFitness/gym/gym/gym6.jpg";
+import gym7 from "../../../assets/images/recreationAndFitness/gym/gym/gym7.jpg";
+import gym8 from "../../../assets/images/recreationAndFitness/gym/gym/gym8.jpg";
+import gym9 from "../../../assets/images/recreationAndFitness/gym/gym/gym9.jpg";
+import gym10 from "../../../assets/images/recreationAndFitness/gym/gym/gym10.jpg";
+import gym11 from "../../../assets/images/recreationAndFitness/gym/gym/gym11.jpg";
+
+import location from "../../../assets/images/icon/location.svg";
+import register from "../../../assets/images/icon/register.svg";
+
+import studioRooms1 from "../../../assets/images/recreationAndFitness/gym/studioRooms/studioRooms1.jpg";
+import studioRooms2 from "../../../assets/images/recreationAndFitness/gym/studioRooms/studioRooms2.jpg";
+import studioRooms3 from "../../../assets/images/recreationAndFitness/gym/studioRooms/studioRooms3.jpg";
+import studioRooms4 from "../../../assets/images/recreationAndFitness/gym/studioRooms/studioRooms4.jpg";
+import studioRooms5 from "../../../assets/images/recreationAndFitness/gym/studioRooms/studioRooms5.jpg";
+
+import glove from "../../../assets/images/icon/glove.svg";
+import weights from "../../../assets/images/icon/weights.svg";
+
+import hallAndSports1 from "../../../assets/images/recreationAndFitness/gym/hallAndSports/hallAndSports1.jpg";
+import hallAndSports2 from "../../../assets/images/recreationAndFitness/gym/hallAndSports/hallAndSports2.jpg";
+import hallAndSports3 from "../../../assets/images/recreationAndFitness/gym/hallAndSports/hallAndSports3.jpg";
+import hallAndSports4 from "../../../assets/images/recreationAndFitness/gym/hallAndSports/hallAndSports4.jpg";
+import hallAndSports5 from "../../../assets/images/recreationAndFitness/gym/hallAndSports/hallAndSports5.jpg";
+import hallAndSports6 from "../../../assets/images/recreationAndFitness/gym/hallAndSports/hallAndSports6.jpg";
+import hallAndSports7 from "../../../assets/images/recreationAndFitness/gym/hallAndSports/hallAndSports7.jpg";
+
+import fitnessGardens1 from "../../../assets/images/recreationAndFitness/gym/fitnessGardens/fitnessGardens1.jpg";
+import fitnessGardens2 from "../../../assets/images/recreationAndFitness/gym/fitnessGardens/fitnessGardens2.jpg";
+import fitnessGardens3 from "../../../assets/images/recreationAndFitness/gym/fitnessGardens/fitnessGardens3.jpg";
+import fitnessGardens4 from "../../../assets/images/recreationAndFitness/gym/fitnessGardens/fitnessGardens4.jpg";
 
 const RecreationAndFitness = () => {
   return (
@@ -86,55 +124,328 @@ const RecreationAndFitness = () => {
               <div className="accordionDiv">
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header>Accordion Item #1</Accordion.Header>
+                    <Accordion.Header>חדר כושר</Accordion.Header>
                     <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      <div className="gymContent">
+                        <div className="imageDisplay">
+                          <Swiper
+                            spaceBetween={30}
+                            pagination={{
+                              clickable: true,
+                            }}
+                            modules={[Pagination]}
+                            className="mySwiper"
+                          >
+                            <SwiperSlide>
+                              <img src={gym1} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym2} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym3} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym4} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym5} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym6} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym7} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym8} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym9} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym10} className="gymSwiperImg" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img src={gym11} className="gymSwiperImg" />
+                            </SwiperSlide>
+                          </Swiper>
+                        </div>
+                        <div className="details">
+                          <div className="locationDiv">
+                            <img
+                              src={location}
+                              className="icon"
+                              alt="location"
+                            />
+                            קריית הספורט, קומה 1
+                          </div>
+                          <div className="timeDiv">
+                            <img
+                              src={detailsTime}
+                              className="icon"
+                              alt="time"
+                            />
+                            <div className="openingHours">
+                              <div className="hoursOne">
+                                <div class="emphasis">א׳ - ד׳: </div>
+                                <div>22:00 - 07:00</div>
+                              </div>
+                              <div className="hoursTwo">
+                                <div class="emphasis">ה׳: </div>
+                                <div>10:30 - 07:00</div>
+                              </div>
+                              <div className="hoursThree">
+                                <div class="emphasis">ו׳: </div>
+                                <div>13:00 - 07:00</div>
+                              </div>
+                              <div class="note">bsd</div>
+                            </div>
+                          </div>
+                          <div className="registerDiv">
+                            <img
+                              src={register}
+                              className="icon"
+                              alt="register"
+                            />
+                            <div className="openingHours">
+                              <div>
+                                <div class="emphasis">א׳ - ד׳: </div>
+                                <div>22:00 - 07:00</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="1">
-                    <Accordion.Header>Accordion Item #2</Accordion.Header>
+                    <Accordion.Header>חדרי סטודיו</Accordion.Header>
                     <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      <div className="studioRoomsContent">
+                        <div className="imageDisplay">
+                          <Swiper
+                            spaceBetween={30}
+                            pagination={{
+                              clickable: true,
+                            }}
+                            modules={[Pagination]}
+                            className="mySwiper"
+                          >
+                            <SwiperSlide>
+                              <img
+                                src={studioRooms1}
+                                className="studioRoomsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={studioRooms2}
+                                className="studioRoomsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={studioRooms3}
+                                className="studioRoomsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={studioRooms4}
+                                className="studioRoomsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={studioRooms5}
+                                className="studioRoomsSwiperImg"
+                              />
+                            </SwiperSlide>
+                          </Swiper>
+                        </div>
+                        <div className="details">
+                          <div className="flexible">
+                            <div className="firstCentered">
+                              <img src={glove} class="icon" />
+                              <div>
+                                <b>אימוני אירובי:</b>
+                                <div className="openingHours">
+                                  <div className="hours">
+                                    <div class="emphasis">א׳: </div>
+                                    <div>22:00 - 07:00</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="firstCentered">
+                              <img src={weights} class="icon" />
+                              <div>
+                                <b>אימוני עיצוב וחיטוב:</b>
+                                <div className="openingHours">
+                                  <div className="hours">
+                                    <div class="emphasis">א׳: </div>
+                                    <div>22:00 - 07:00</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="altColor">
+                            <div>
+                              3 חדרי סטודיו שונים עם
+                              <div class="emphasis">מראות ומערכת שמע</div>.
+                            </div>
+                            <br />
+                            <div>
+                              אחד מחדרי הסטודיו מותאם
+                              <div class="emphasis">לשיעורי ספינינג </div>
+                              הכולל מספר רב של אופני ספינינג.
+                            </div>
+                            <div className="flexEnd">
+                              <img
+                                src={detailsPhone}
+                                className="icon"
+                                alt="phone"
+                              />
+                              <div>
+                                אימוני סטודיו זמינים לכל הבהדים בתאום מול ירין:
+                                <Link class="link" to={"tel:97254-467-5273"}>
+                                  {" "}
+                                  <div class="text">054-467-5273</div>{" "}
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="2">
-                    <Accordion.Header>Accordion Item #2</Accordion.Header>
+                    <Accordion.Header>אולם ומגרשי ספורט</Accordion.Header>
                     <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      <div className="hallAndSportsContent">
+                        <div className="imageDisplay">
+                          <Swiper
+                            spaceBetween={30}
+                            pagination={{
+                              clickable: true,
+                            }}
+                            modules={[Pagination]}
+                            className="mySwiper"
+                          >
+                            <SwiperSlide>
+                              <img
+                                src={hallAndSports1}
+                                className="hallAndSportsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={hallAndSports2}
+                                className="hallAndSportsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={hallAndSports3}
+                                className="hallAndSportsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={hallAndSports4}
+                                className="hallAndSportsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={hallAndSports5}
+                                className="hallAndSportsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={hallAndSports6}
+                                className="hallAndSportsSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={hallAndSports7}
+                                className="hallAndSportsSwiperImg"
+                              />
+                            </SwiperSlide>
+                          </Swiper>
+                        </div>
+                        <div className="details">
+                          <div className="flexStart">
+                            מחוץ לקריית הספורט ישנם
+                            <div className="emphasis">8 חלקות מגרשים</div>,
+                            הניתנים
+                            <div className="emphasis">
+                              לתיאום מול מדא”ג הבה”ד
+                            </div>
+                            .
+                            <br />
+                            בקשה לשריון מגרש תעשה
+                            <div className="emphasis">לפחות שבוע מראש</div>.
+                          </div>
+                          <div>
+                            השימוש במתקני אולם הספורט מתאפשר רק
+                            <div className="emphasis">בהשגחת מדא”ג </div>.
+                          </div>
+                        </div>
+                      </div>
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="3">
-                    <Accordion.Header>Accordion Item #2</Accordion.Header>
+                    <Accordion.Header>גינות כושר</Accordion.Header>
                     <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      <div className="fitnessGardensContent">
+                        <div className="imageDisplay">
+                          <Swiper
+                            spaceBetween={30}
+                            pagination={{
+                              clickable: true,
+                            }}
+                            modules={[Pagination]}
+                            className="mySwiper"
+                          >
+                            <SwiperSlide>
+                              <img
+                                src={fitnessGardens1}
+                                className="fitnessGardensSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={fitnessGardens2}
+                                className="fitnessGardensSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={fitnessGardens3}
+                                className="fitnessGardensSwiperImg"
+                              />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                              <img
+                                src={fitnessGardens4}
+                                className="fitnessGardensSwiperImg"
+                              />
+                            </SwiperSlide>
+                          </Swiper>
+                        </div>
+                        <div className="details">
+                          ברחבי הבסיס באזורי בהד”ים שונים ישנן גינות כושר
+                          חיצוניות ובהן
+                          <div class="emphasis">מתקני כושר</div>
+                          שונים הניתנים לשימוש
+                          <div class="emphasis">בכל מהלך היום</div>
+                        </div>
+                      </div>
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
