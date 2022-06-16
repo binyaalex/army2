@@ -231,7 +231,7 @@ const RecreationAndFitness = () => {
                           <div class="date">מתוקף ל-9/12/1911</div>
                           <div className="gymFacility">
                             <div className="bhdSchedule">
-                              <div className="titleDiv">
+                              <div className="gymFacilityTitleDiv">
                                 <div className="title"> שיבוצי שעות</div>
                                 <img
                                   className="titleUnderline"
@@ -251,7 +251,7 @@ const RecreationAndFitness = () => {
                               </div>
                             </div>
                             <div className="prepNote">
-                              <div className="titleDiv">
+                              <div className="gymFacilityTitleDiv">
                                 <div className="title"> שיבוצי שעות</div>
                                 <img
                                   className="titleUnderline"
