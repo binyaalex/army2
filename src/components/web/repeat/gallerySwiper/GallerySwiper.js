@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
-const GallerySwiper = ({imgArr, slidesPerView}) => {
+const GallerySwiper = ({imgArr, slidesPerView, className}) => {
 	return (
 		<div className='swiperDiv'>
 			<Swiper
@@ -18,7 +18,7 @@ const GallerySwiper = ({imgArr, slidesPerView}) => {
 	            clickable: true,
 	          }}
 	          modules={[Pagination]}
-	          className="mySwiper"
+	          className="mySwiper bigGallery"
 	        >
 	        	{
 					imgArr.map((el, i) => {

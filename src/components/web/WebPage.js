@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Nav from "./nav/Nav";
 import Footer from "./footer/Footer";
 import Home from "./home/Home";
+import TrainingBase from "./trainingBase/TrainingBase";
 import Transport from "./transport/Transport";
 import Dining from "./dining/Dining";
 import Services from "./services/Services";
@@ -18,6 +19,7 @@ const WebPage = () => {
       <div className="scrollable">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="trainingbase" element={<TrainingBase />} />
           <Route path="transport" element={<Transport />} />
           <Route path="dining" element={<Dining />} />
           <Route path="services" element={<Services />} />

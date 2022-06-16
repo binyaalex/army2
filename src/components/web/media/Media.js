@@ -19,13 +19,34 @@ const Media = () => {
 			src: 'culture/*.jpg, library-carousell/*.jpg',
 			titles: 'media.json5#culture.imageTitles',
 			imgArr: [
-				'/images/750_0031.c6811a09.jpg',
-				'/images/750_9558.5156d774.jpg',
-				'/images/750_0039.ef7669db.jpg',
-				'/images/750_9572.d3e1edaa.jpg',
-				'/images/750_9582.55b89606.jpg',
-				'/images/750_9588.253d86ed.jpg',
-				'/images/TIL_7577 - Copy.dea61347.jpg',
+				{
+					img: '/images/750_0031.c6811a09.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9558.5156d774.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_0039.ef7669db.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9572.d3e1edaa.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9582.55b89606.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9588.253d86ed.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/TIL_7577 - Copy.dea61347.jpg',
+					className: 'bigGallery',
+				},
 			]
 		},
 		{
@@ -35,13 +56,34 @@ const Media = () => {
 			src: 'culture/*.jpg, library-carousell/*.jpg',
 			titles: 'media.json5#culture.imageTitles',
 			imgArr: [
-				'/images/750_0031.c6811a09.jpg',
-				'/images/750_9558.5156d774.jpg',
-				'/images/750_0039.ef7669db.jpg',
-				'/images/750_9572.d3e1edaa.jpg',
-				'/images/750_9582.55b89606.jpg',
-				'/images/750_9588.253d86ed.jpg',
-				'/images/TIL_7577 - Copy.dea61347.jpg',
+				{
+					img: '/images/750_0031.c6811a09.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9558.5156d774.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_0039.ef7669db.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9572.d3e1edaa.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9582.55b89606.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9588.253d86ed.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/TIL_7577 - Copy.dea61347.jpg',
+					className: 'bigGallery',
+				},
 			]
 		},
 		{
@@ -51,13 +93,34 @@ const Media = () => {
 			src: 'culture/*.jpg, library-carousell/*.jpg',
 			titles: 'media.json5#culture.imageTitles',
 			imgArr: [
-				'/images/750_0031.c6811a09.jpg',
-				'/images/750_9558.5156d774.jpg',
-				'/images/750_0039.ef7669db.jpg',
-				'/images/750_9572.d3e1edaa.jpg',
-				'/images/750_9582.55b89606.jpg',
-				'/images/750_9588.253d86ed.jpg',
-				'/images/TIL_7577 - Copy.dea61347.jpg',
+				{
+					img: '/images/750_0031.c6811a09.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9558.5156d774.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_0039.ef7669db.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9572.d3e1edaa.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9582.55b89606.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9588.253d86ed.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/TIL_7577 - Copy.dea61347.jpg',
+					className: 'bigGallery',
+				},
 			]
 		},
 		{
@@ -67,13 +130,34 @@ const Media = () => {
 			src: 'culture/*.jpg, library-carousell/*.jpg',
 			titles: 'media.json5#culture.imageTitles',
 			imgArr: [
-				'/images/750_0031.c6811a09.jpg',
-				'/images/750_9558.5156d774.jpg',
-				'/images/750_0039.ef7669db.jpg',
-				'/images/750_9572.d3e1edaa.jpg',
-				'/images/750_9582.55b89606.jpg',
-				'/images/750_9588.253d86ed.jpg',
-				'/images/TIL_7577 - Copy.dea61347.jpg',
+				{
+					img: '/images/750_0031.c6811a09.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9558.5156d774.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_0039.ef7669db.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9572.d3e1edaa.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9582.55b89606.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9588.253d86ed.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/TIL_7577 - Copy.dea61347.jpg',
+					className: 'bigGallery',
+				},
 			]
 		},
 		{
@@ -83,16 +167,36 @@ const Media = () => {
 			src: 'culture/*.jpg, library-carousell/*.jpg',
 			titles: 'media.json5#culture.imageTitles',
 			imgArr: [
-				'/images/750_0031.c6811a09.jpg',
-				'/images/750_9558.5156d774.jpg',
-				'/images/750_0039.ef7669db.jpg',
-				'/images/750_9572.d3e1edaa.jpg',
-				'/images/750_9582.55b89606.jpg',
-				'/images/750_9588.253d86ed.jpg',
-				'/images/TIL_7577 - Copy.dea61347.jpg',
+				{
+					img: '/images/750_0031.c6811a09.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9558.5156d774.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_0039.ef7669db.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9572.d3e1edaa.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9582.55b89606.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/750_9588.253d86ed.jpg',
+					className: 'bigGallery',
+				},
+				{
+					img: '/images/TIL_7577 - Copy.dea61347.jpg',
+					className: 'bigGallery',
+				},
 			]
 		},
-
 	]
 
 	const NavigatorArr = [

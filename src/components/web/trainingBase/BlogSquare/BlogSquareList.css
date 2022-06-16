@@ -1,0 +1,15 @@
+.webBlogList {
+    padding-top: 2vh;
+}
+
+.webPage .image_des_1 {
+    position: absolute;
+    bottom: 1.5vw;
+    right: 1.5vw;
+    color: white;
+    margin: 0;
+    font-size: 25px;
+    padding-left: 20%;
+    direction: rtl;
+    font-size: calc(12px + 0.7vw);
+}

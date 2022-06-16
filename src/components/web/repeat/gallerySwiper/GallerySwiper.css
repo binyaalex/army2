@@ -9,3 +9,12 @@
     height: 22vw;
     float: right;
 }
+
+.swiperDiv .bigGallery {
+    float: none;
+    width: 95%;
+}
+
+.swiperDiv .mediumGallery {
+	margin-left: 50px;
+}

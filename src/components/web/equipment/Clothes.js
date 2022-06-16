@@ -1,11 +1,45 @@
 import SmallHeader from "../repeat/SmallHeader";
+import GallerySwiper from "../repeat/gallerySwiper/GallerySwiper";
 
 const Clothes = () => {
+
+	const imgArr = [
+		{
+			img: '/images/750_0031.c6811a09.jpg',
+			className: 'poolSwiperImg',
+		},
+		{
+			img: '/images/750_9558.5156d774.jpg',
+			className: 'poolSwiperImg',
+		},
+		{
+			img: '/images/750_0039.ef7669db.jpg',
+			className: 'poolSwiperImg',
+		},
+		{
+			img: '/images/750_9572.d3e1edaa.jpg',
+			className: 'poolSwiperImg',
+		},
+		{
+			img: '/images/750_9582.55b89606.jpg',
+			className: 'poolSwiperImg',
+		},
+		{
+			img: '/images/750_9588.253d86ed.jpg',
+			className: 'poolSwiperImg',
+		},
+		{
+			img: '/images/TIL_7577 - Copy.dea61347.jpg',
+			className: 'poolSwiperImg',
+		},
+	]
+
 	return (
 		<div className="repository"> 
 			<SmallHeader title='אפסנכל' />
 			<div className="details-display flexible"> 
-				{<imgdisplay src="repository/*.jpg"><div className="images"><img src="/images/750_9364.9f255d34.jpg"/><img src="/images/750_9387.c54eb303.jpg"/><img src="/images/750_9388.fb01f69c.jpg"/><img src="/images/750_9391.78c5b413.jpg"/></div><div className="overlay"><div className="prev nav"></div><div className="next nav"></div><div className="indicators"><div className="indicator"></div><div className="indicator"></div><div className="indicator"></div><div className="indicator"></div><div className="indicator active" ></div></div></div></imgdisplay>}
+				<GallerySwiper imgArr={imgArr} className='mySwiper mediumGallery' />
+				{/*{<imgdisplay src="repository/*.jpg"><div className="images"><img src="/images/750_9364.9f255d34.jpg"/><img src="/images/750_9387.c54eb303.jpg"/><img src="/images/750_9388.fb01f69c.jpg"/><img src="/images/750_9391.78c5b413.jpg"/></div><div className="overlay"><div className="prev nav"></div><div className="next nav"></div><div className="indicators"><div className="indicator"></div><div className="indicator"></div><div className="indicator"></div><div className="indicator"></div><div className="indicator active" ></div></div></div></imgdisplay>}*/}
 				<div className="expand"> המדים לא מתאימים בול? בואו להחליף ולקבל את המידות שיתאימו לכם 
 					<div className="col details flexible"> 
 						<div className="flexible"> 
