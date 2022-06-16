@@ -677,6 +677,7 @@
   width: 2.75vmax;
   height: 2.75vmax;
   background-size: 1.75rem;
+  transition: transform .6s ease-in-out;
 }
 
 .recreationAndFitnessPage
@@ -710,6 +711,14 @@
   border-color: unset !important;
   outline: 0 !important;
   box-shadow: unset !important;
+}
+
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv .accordion-button:not(.collapsed)::after {
+    background-image: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
 }
 
 .recreationAndFitnessPage
@@ -962,7 +971,6 @@
   .gymContent
   .gymImageAndText
   .gymFacility {
-  margin-bottom: 6em;
   display: flex;
 }
 
@@ -987,7 +995,7 @@
   .gymImageAndText
   .gymFacility
   .bhdSchedule
-  .titleDiv {
+  .gymFacilityTitleDiv {
   display: block;
   line-height: 1.2;
 }
@@ -1001,7 +1009,7 @@
   .gymImageAndText
   .gymFacility
   .bhdSchedule
-  .titleDiv
+  .gymFacilityTitleDiv
   .title {
   font-family: SecularOne;
   font-size: 3vmax;
@@ -1017,7 +1025,7 @@
   .gymImageAndText
   .gymFacility
   .bhdSchedule
-  .titleDiv
+  .gymFacilityTitleDiv
   .titleUnderline {
   height: 0.3vmax;
   margin-bottom: 1em;
@@ -1501,3 +1509,11 @@
   margin-bottom: 15em;
   max-width: 25em;
 }
+
+.swiper .swiper-button-next, .swiper .swiper-button-prev {
+  color: white;
+}
+
+.swiper .swiper-button-next:after, .swiper .swiper-button-prev:after {
+  font-weight: 700;
+} 
