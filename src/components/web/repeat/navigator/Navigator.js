@@ -4,7 +4,7 @@ import NavigatorBtn from "./NavigatorBtn";
 const Navigator = ({NavigatorArr}) => {
 
 	return (
-		<div class="navigator middle">
+		<div className="navigator middle">
 			{
 				NavigatorArr.map((el, i) => {
 					return (

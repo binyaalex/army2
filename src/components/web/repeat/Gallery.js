@@ -1,7 +1,7 @@
 const Gallery = ({imgArr, src, titles}) => {
 	return (
 		<imgdisplay display="many" src={src} titles={titles} >
-			<div class="images">
+			<div className="images">
 				{
 					imgArr.map((el, i) => {
 						return (
@@ -10,14 +10,14 @@ const Gallery = ({imgArr, src, titles}) => {
 					})
 				}
 			</div>
-			<div class="overlay">
-				<div class="prev nav"></div>
-				<div class="next nav"></div>
-				<div class="indicators">
+			<div className="overlay">
+				<div className="prev nav"></div>
+				<div className="next nav"></div>
+				<div className="indicators">
 					{
 						imgArr.map((el, i) => {
 							return (
-								<div class="indicator" key={i} ></div>
+								<div className="indicator" key={i} ></div>
 							)
 						})
 					}

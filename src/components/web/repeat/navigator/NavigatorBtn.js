@@ -28,7 +28,7 @@ const NavigatorBtn = ({img, text, i}) => {
 		<a className={className} >
 			<FontAwesomeIcon icon={img} className='' > </FontAwesomeIcon>
 			{/*<img src={img} draggable="false"/>*/}
-			<div class="hover-text">{text}</div>
+			<div className="hover-text">{text}</div>
 		</a>
 	)
 }
