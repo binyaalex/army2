@@ -17,13 +17,13 @@ const Shuttle = () => {
 	}
 
 	return (
-		<div class="focused shuttle-schedule">
+		<div className="focused shuttle-schedule">
 			<SmallHeader title='שאטלים ליום ראשון' /> 
 			<dropdown data="shared.json5#places" defaultvalue="בחר מיקום" tabindex="0"> 
-				<div class="content">
+				<div className="content">
 					<div>
 						<div>בחר מיקום</div>
-						<div onClick={open} class="retractable" opt-id=""></div>
+						<div onClick={open} className="retractable" opt-id=""></div>
 					</div>
 					<div opt-id="loc-KS">קריית שמונה</div>
 					<div opt-id="loc-HAT">חצור</div>
@@ -58,19 +58,19 @@ const Shuttle = () => {
 					<div opt-id="loc-RA-N">ראש העין צפון</div>
 				</div>
 			</dropdown> 
-			<icontext class="location" icon="/images/icon-location.svg">
-				<img src="/images/icon-location.b55b841e.svg" class="icon"/> 
-				<a class="link"> 
-					<div class="text">מיקום</div>
+			<icontext className="location" icon="/images/icon-location.svg">
+				<img src="/images/icon-location.b55b841e.svg" className="icon"/> 
+				<a className="link"> 
+					<div className="text">מיקום</div>
 				</a> 
 			</icontext> 
-			<div class="schedule"> 
+			<div className="schedule"> 
 				<icontext icon="/images/icon-time.svg">
-					<img src="/images/icon-time.13cd3768.svg" class="icon"/> 
-					<openinghours type="hours" class="text">זמן</openinghours>
+					<img src="/images/icon-time.13cd3768.svg" className="icon"/> 
+					<openinghours type="hours" className="text">זמן</openinghours>
 				</icontext> 
 			</div> 
-			<div class="category-separator"></div> 
+			<div className="category-separator"></div> 
 		</div>
 	)
 }

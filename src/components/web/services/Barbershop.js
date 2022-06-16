@@ -2,61 +2,61 @@ import SmallHeader from "../repeat/SmallHeader";
 
 const Barbershop = () => {
 	return (
-		<div class="barber-shop" displayname="services.json5#barbershop.title" icon="scissors.svg">
+		<div className="barber-shop" displayname="services.json5#barbershop.title" icon="scissors.svg">
 			<SmallHeader title='מספרה' />
-			<div class="flexible"> 
-				<div class="col expand flexible x4"> 
+			<div className="flexible"> 
+				<div className="col expand flexible x4"> 
 					<div> השיער הספיק לצמוח השבוע? <br/> 
-						<div class="alt-color emphasis">תאמו תור מראש </div>
+						<div className="alt-color emphasis">תאמו תור מראש </div>
 						 והסתפרו בבסיס! 
 					</div> 
-					<icontext class="flex-end location" icon="icon-location.svg">
-						<img src="/images/icon-location.b55b841e.svg" class="icon"/>
+					<icontext className="flex-end location" icon="icon-location.svg">
+						<img src="/images/icon-location.b55b841e.svg" className="icon"/>
 						המרכז המסחרי, המבנה הראשון 
 					</icontext> 
 				</div> 
-				<div class="col expand flexible x4"> 
+				<div className="col expand flexible x4"> 
 					<icontext icon="icon-time.svg">
-						<img src="/images/icon-time.13cd3768.svg" class="icon"/> 
+						<img src="/images/icon-time.13cd3768.svg" className="icon"/> 
 						<openinghours src="services.json5#barbershop.openingHours">
 							<div>
-								<div class="emphasis">א׳ - ה׳: </div>
+								<div className="emphasis">א׳ - ה׳: </div>
 								<div>18:45 - 08:00</div>
 							</div>
 							<div>
-								<div class="emphasis">הפסקה: </div>
+								<div className="emphasis">הפסקה: </div>
 								<div>13:00 - 12:00</div>
 							</div>
 							<div>
-								<div class="emphasis">שישי וערבי חג: </div>
+								<div className="emphasis">שישי וערבי חג: </div>
 								<div>12:00 - 08:00</div>
 							</div>
 						</openinghours> 
 					</icontext> 
-					<icontext class="flex-end" icon="icon-phone-black.svg">
-						<img src="/images/icon-phone-black.033ad4fd.svg" class="icon"/>
+					<icontext className="flex-end" icon="icon-phone-black.svg">
+						<img src="/images/icon-phone-black.033ad4fd.svg" className="icon"/>
 						לקביעת תור: 
-							<a class="link" href="tel: 972545562343"> 
-								<div class="text"> 054-5562343 </div> 
+							<a className="link" href="tel: 972545562343"> 
+								<div className="text"> 054-5562343 </div> 
 							</a> 
 					</icontext> 
 				</div> 
-				<div class="expand flexible queue x5"> 
-					<div class="col expand flexible img x3"> 
+				<div className="expand flexible queue x5"> 
+					<div className="col expand flexible img x3"> 
 						<img src="/images/brimless-hat.95e69b9a.svg"/> 
-						<div class="flex-end"> 
-							<div class="emphasis">חניכים:</div>
+						<div className="flex-end"> 
+							<div className="emphasis">חניכים:</div>
 							<br/> תאמו תור 
-							<b class="as-content">דרך המפקד </b>
+							<b className="as-content">דרך המפקד </b>
 							,<br/>
-							<b class="as-content">לפחות יום </b>
+							<b className="as-content">לפחות יום </b>
 							 מראש 
 						</div> 
 					</div> 
-					<div class="col expand flexible img x2"> 
+					<div className="col expand flexible img x2"> 
 						<img src="/images/cap-hat.78bee39d.svg"/> 
-						<div class="flex-end"> 
-							<div class="emphasis">סגל:</div>
+						<div className="flex-end"> 
+							<div className="emphasis">סגל:</div>
 							<br/>
 							<div>קבעו תור</div>
 							<b>בהתראה של יום</b> 

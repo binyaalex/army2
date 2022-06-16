@@ -47,7 +47,7 @@ import pool3 from "../../../assets/images/recreationAndFitness/pool/pool3.jpg";
 import girl from "../../../assets/images/recreationAndFitness/girl.svg";
 import boy from "../../../assets/images/recreationAndFitness/boy.svg";
 
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from "react-bootstrap/Accordion";
 import { Link } from "react-router-dom";
 
 const RecreationAndFitness = () => {
@@ -79,6 +79,10 @@ const RecreationAndFitness = () => {
           </div>
           <div className="textArea">
             <div id="gym" className="gymText">
+              <div className="titleDiv">
+                <div className="title">כושר</div>
+                <img className="titleUnderline" src={textUnderlineBlue} />
+              </div>
               <div className="accordionDiv">
                 <Accordion>
                   <Accordion.Item eventKey="0">
