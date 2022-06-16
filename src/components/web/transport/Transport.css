@@ -359,9 +359,7 @@ imgdisplay[display=many]>.overlay>.indicators>div~div:not(.active) {
     margin-inline-start: 3vw;
 }
 
-.transport .swiperDiv .swiper {
-    float: none;
-}
+
 
 
 

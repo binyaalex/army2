@@ -1,0 +1,23 @@
+.webDoctorList .doctor_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.webDoctorList .doctor_box .box_img {
+  max-width: 73%;
+  height: unset;
+}
+
+.webDoctorList .doctor_box .box_img img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.webDoctorList .doctor_box h6 {
+  text-align: center;
+}
+
+.webDoctorList .doctor_box span {
+  margin: 0 5px 0 0;
+}

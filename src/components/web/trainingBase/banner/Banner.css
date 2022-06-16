@@ -1,0 +1,30 @@
+.hospitalWebBanner .container {
+  width: 90%;
+}
+
+.hospitalWebBanner .container .bannerImg {
+  height: 400px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.hospitalWebBanner .container .bannerDiv {
+  position: absolute;
+  right: 0;
+  margin-right: 10%;
+  bottom: 0;
+  z-index: 1030;
+}
+
+.hospitalWebBanner .container .bannerDiv .bannerDivTitle {
+  font-size: 54px;
+  font-weight: 700;
+  color: white;
+}
+
+.hospitalWebBanner .container .bannerDiv .bannerDivDetail {
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  text-align: right !important;
+}
