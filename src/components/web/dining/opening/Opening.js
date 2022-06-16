@@ -10,17 +10,17 @@ const Opening = () => {
 				{
 					img: '/images/s-morning.c53c11a0.svg',
 					text: 'בוקר',
-					hours: '06:00 - 08:00',
+					hours: '08:00 - 06:00',
 				},
 				{
 					img: '/images/s-lunch.4b0ba03c.svg',
 					text: 'צהריים',
-					hours: '11:30 - 14:00',
+					hours: '14:00 - 11:30',
 				},
 				{
 					img: '/images/s-evening.428ca55b.svg',
 					text: 'ערב',
-					hours: '18:00 - 20:00',
+					hours: '20:00 - 18:00',
 				},
 			]
 		},
@@ -30,17 +30,17 @@ const Opening = () => {
 				{
 					img: '/images/s-morning.c53c11a0.svg',
 					text: 'בוקר',
-					hours: '06:30 - 08:00',
+					hours: '08:00 - 06:30',
 				},
 				{
 					img: '/images/s-lunch.4b0ba03c.svg',
 					text: 'צהריים',
-					hours: '11:30 - 13:30',
+					hours: '13:30 - 11:30',
 				},
 				{
 					img: '/images/s-evening.428ca55b.svg',
 					text: 'ערב',
-					hours: '18:00 - 22:00',
+					hours: '22:00 - 18:00',
 				},
 			]
 		},
@@ -50,17 +50,17 @@ const Opening = () => {
 				{
 					img: '/images/s-morning.c53c11a0.svg',
 					text: 'בוקר',
-					hours: '06:30 - 08:00',
+					hours: '08:00 - 06:30',
 				},
 				{
 					img: '/images/s-lunch.4b0ba03c.svg',
 					text: 'צהריים',
-					hours: '11:30 - 14:30',
+					hours: '14:30 - 11:30',
 				},
 				{
 					img: '/images/s-evening.428ca55b.svg',
 					text: 'ערב',
-					hours: '18:00 - 19:00',
+					hours: '19:00 - 18:00',
 				},
 			]
 		},

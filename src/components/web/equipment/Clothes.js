@@ -5,7 +5,7 @@ const Clothes = () => {
 		<div className="repository"> 
 			<SmallHeader title='אפסנכל' />
 			<div className="details-display flexible"> 
-				{/*<imgdisplay src="repository/*.jpg"><div className="images"><img src="750_9364.9f255d34.jpg"><img src="750_9387.c54eb303.jpg"><img src="750_9388.fb01f69c.jpg"><img src="750_9391.78c5b413.jpg"></div><div className="overlay"><div className="prev nav"></div><div className="next nav"></div><div className="indicators"><div className="indicator"></div><div className="indicator"></div><div className="indicator"></div><div className="indicator"></div><div className="indicator active" style="transform: translate(-4.4086vw);"></div></div></div></imgdisplay>*/}
+				{<imgdisplay src="repository/*.jpg"><div className="images"><img src="/images/750_9364.9f255d34.jpg"/><img src="/images/750_9387.c54eb303.jpg"/><img src="/images/750_9388.fb01f69c.jpg"/><img src="/images/750_9391.78c5b413.jpg"/></div><div className="overlay"><div className="prev nav"></div><div className="next nav"></div><div className="indicators"><div className="indicator"></div><div className="indicator"></div><div className="indicator"></div><div className="indicator"></div><div className="indicator active" ></div></div></div></imgdisplay>}
 				<div className="expand"> המדים לא מתאימים בול? בואו להחליף ולקבל את המידות שיתאימו לכם 
 					<div className="col details flexible"> 
 						<div className="flexible"> 
@@ -33,7 +33,7 @@ const Clothes = () => {
 								<a className="link" href="tel: +97273-3772730"> 
 									<div className="text"> 073-3772730</div> 
 								</a> 
-								<div>או</div> 
+								<div> או </div> 
 								<a className="link" href="tel: +97273-3772729"> 
 									<div className="text">073-3772729</div> 
 								</a> 
