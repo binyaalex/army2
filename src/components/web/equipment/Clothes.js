@@ -5,7 +5,7 @@ const Clothes = () => {
 		<div class="repository"> 
 			<SmallHeader title='אפסנכל' />
 			<div class="details-display flexible"> 
-				{/*<imgdisplay src="repository/*.jpg"><div class="images"><img src="750_9364.9f255d34.jpg"><img src="750_9387.c54eb303.jpg"><img src="750_9388.fb01f69c.jpg"><img src="750_9391.78c5b413.jpg"></div><div class="overlay"><div class="prev nav"></div><div class="next nav"></div><div class="indicators"><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator active" style="transform: translate(-4.4086vw);"></div></div></div></imgdisplay>*/}
+				{<imgdisplay src="repository/*.jpg"><div class="images"><img src="/images/750_9364.9f255d34.jpg"/><img src="/images/750_9387.c54eb303.jpg"/><img src="/images/750_9388.fb01f69c.jpg"/><img src="/images/750_9391.78c5b413.jpg"/></div><div class="overlay"><div class="prev nav"></div><div class="next nav"></div><div class="indicators"><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator"></div><div class="indicator active" ></div></div></div></imgdisplay>}
 				<div class="expand"> המדים לא מתאימים בול? בואו להחליף ולקבל את המידות שיתאימו לכם 
 					<div class="col details flexible"> 
 						<div class="flexible"> 

@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .main, .place-holder {
     background-image: linear-gradient(45deg,purple 25%,transparent 0,transparent 75%,purple 0,purple),linear-gradient(45deg,purple 25%,#fff 0,#fff 75%,purple 0,purple);
     background-position: 0 0,30px 30px;
@@ -284,4 +288,10 @@ openinghours>div {
 
 .main>.scrollable>.page .no-start-margin, .main>.scrollable>.page .no-start-margin *, .main>.scrollable>.page .no-start-margin-inside :last-child {
     margin-inline-start: 0;
+}
+
+imgdisplay>.images>img {
+    cursor: pointer;
+    min-width: 100%;
+    width: 100%;
 }

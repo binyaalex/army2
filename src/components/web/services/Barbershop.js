@@ -46,8 +46,7 @@ const Barbershop = () => {
 						<img src="/images/brimless-hat.95e69b9a.svg"/> 
 						<div class="flex-end"> 
 							<div class="emphasis">חניכים:</div>
-							<br/> תאמו תור 
-							<b class="as-content">דרך המפקד </b>
+							<br/> תאמו תור  <b class="as-content"> דרך המפקד </b>
 							,<br/>
 							<b class="as-content">לפחות יום </b>
 							 מראש 
@@ -59,7 +58,7 @@ const Barbershop = () => {
 							<div class="emphasis">סגל:</div>
 							<br/>
 							<div>קבעו תור</div>
-							<b>בהתראה של יום</b> 
+							<b> בהתראה של יום</b> 
 						</div> 
 					</div> 
 				</div> 
