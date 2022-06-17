@@ -11,9 +11,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 import Accordion from "react-bootstrap/Accordion";
 
@@ -88,6 +89,10 @@ import fitnessGardens2 from "../../../assets/images/recreationAndFitness/gym/fit
 import fitnessGardens3 from "../../../assets/images/recreationAndFitness/gym/fitnessGardens/fitnessGardens3.jpg";
 import fitnessGardens4 from "../../../assets/images/recreationAndFitness/gym/fitnessGardens/fitnessGardens4.jpg";
 
+import close from "../../../assets/images/icon/close.svg";
+import towel from "../../../assets/images/icon/towel.svg";
+import doctor from "../../../assets/images/icon/doctor.svg";
+
 const RecreationAndFitness = () => {
   return (
     <>
@@ -127,91 +132,172 @@ const RecreationAndFitness = () => {
                     <Accordion.Header>חדר כושר</Accordion.Header>
                     <Accordion.Body>
                       <div className="gymContent">
-                        <div className="imageDisplay">
-                          <Swiper
-                            spaceBetween={30}
-                            pagination={{
-                              clickable: true,
-                            }}
-                            modules={[Pagination]}
-                            className="mySwiper"
-                          >
-                            <SwiperSlide>
-                              <img src={gym1} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym2} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym3} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym4} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym5} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym6} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym7} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym8} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym9} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym10} className="gymSwiperImg" />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                              <img src={gym11} className="gymSwiperImg" />
-                            </SwiperSlide>
-                          </Swiper>
-                        </div>
-                        <div className="details">
-                          <div className="locationDiv">
-                            <img
-                              src={location}
-                              className="icon"
-                              alt="location"
-                            />
-                            קריית הספורט, קומה 1
+                        <div className="gymImageAndText">
+                          <div className="imageDisplay">
+                            <Swiper
+                              spaceBetween={30}
+                              centeredSlides={true}
+                              autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                              }}
+                              pagination={{
+                                clickable: true,
+                              }}
+                              navigation={true}
+                              modules={[Autoplay, Pagination, Navigation]}
+                              className="mySwiper"
+                            >
+                              <SwiperSlide>
+                                <img src={gym1} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym2} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym3} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym4} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym5} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym6} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym7} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym8} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym9} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym10} className="gymSwiperImg" />
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                <img src={gym11} className="gymSwiperImg" />
+                              </SwiperSlide>
+                            </Swiper>
                           </div>
-                          <div className="timeDiv">
-                            <img
-                              src={detailsTime}
-                              className="icon"
-                              alt="time"
-                            />
-                            <div className="openingHours">
-                              <div className="hoursOne">
-                                <div class="emphasis">א׳ - ד׳: </div>
-                                <div>22:00 - 07:00</div>
+                          <div className="details">
+                            <div className="locationDiv">
+                              <img
+                                src={location}
+                                className="icon"
+                                alt="location"
+                              />
+                              קריית הספורט, קומה 1
+                            </div>
+                            <div className="timeDiv">
+                              <img
+                                src={detailsTime}
+                                className="icon"
+                                alt="time"
+                              />
+                              <div className="openingHours">
+                                <div className="hoursOne">
+                                  <div class="emphasis">א׳ - ד׳: </div>
+                                  <div>22:00 - 07:00</div>
+                                </div>
+                                <div className="hoursTwo">
+                                  <div class="emphasis">ה׳: </div>
+                                  <div>10:30 - 07:00</div>
+                                </div>
+                                <div className="hoursThree">
+                                  <div class="emphasis">ו׳: </div>
+                                  <div>13:00 - 07:00</div>
+                                </div>
+                                <div class="note">bsd</div>
                               </div>
-                              <div className="hoursTwo">
-                                <div class="emphasis">ה׳: </div>
-                                <div>10:30 - 07:00</div>
+                            </div>
+                            <div className="registerDiv">
+                              <img
+                                src={register}
+                                className="icon"
+                                alt="register"
+                              />
+                              <div className="openingHours">
+                                <div>
+                                  <div class="emphasis">א׳ - ד׳: </div>
+                                  <div>22:00 - 07:00</div>
+                                </div>
                               </div>
-                              <div className="hoursThree">
-                                <div class="emphasis">ו׳: </div>
-                                <div>13:00 - 07:00</div>
-                              </div>
-                              <div class="note">bsd</div>
                             </div>
                           </div>
-                          <div className="registerDiv">
-                            <img
-                              src={register}
-                              className="icon"
-                              alt="register"
-                            />
-                            <div className="openingHours">
-                              <div>
-                                <div class="emphasis">א׳ - ד׳: </div>
-                                <div>22:00 - 07:00</div>
+                          <div class="date">מתוקף ל-9/12/1911</div>
+                          <div className="gymFacility">
+                            <div className="bhdSchedule">
+                              <div className="gymFacilityTitleDiv">
+                                <div className="title"> שיבוצי שעות</div>
+                                <img
+                                  className="titleUnderline"
+                                  src={textUnderlineBlack}
+                                />
+                              </div>
+                              <div className="coronaWarn">
+                                <div className="warnSign">!</div>
+                                <div className="warnBody">
+                                  {" "}
+                                  בתקופת הקורונה, הכניסה לחד"כ היא על בסיס
+                                  קפסולות. למידע, פנו למפקדיכם!{" "}
+                                </div>
+                              </div>
+                              <div className="emphasis">
+                                יש להרשם מראש אצל מדא"ג הבה"ד בכדי להכנס לחד"כ
+                              </div>
+                            </div>
+                            <div className="prepNote">
+                              <div className="gymFacilityTitleDiv">
+                                <div className="title"> שיבוצי שעות</div>
+                                <img
+                                  className="titleUnderline"
+                                  src={textUnderlineBlack}
+                                />
+                              </div>
+                              <div className="notes">
+                                <div className="contentTopped">
+                                  <img
+                                    src={register}
+                                    className="icon"
+                                    alt="register"
+                                  />
+                                  הכניסה לחדר הכושר מותנת בהצגת
+                                  <div class="emphasis">מנוי וחוגר בלבד </div>
+                                </div>
+                                <div className="contentTopped">
+                                  <img
+                                    src={close}
+                                    className="icon"
+                                    alt="close"
+                                  />
+                                  <div class="emphasis">אין להכנס</div>
+                                  לחדר הכושר
+                                  <div class="emphasis">ללא מדריך</div>
+                                  נוכח או
+                                  <div class="emphasis">לאחר שעות הפעילות</div>
+                                </div>
+                                <div className="contentTopped">
+                                  <img src={towel} class="icon" alt="towel" />
+                                  כל מתאמן מחויב להגיע
+                                  <br /> על
+                                  <div class="emphasis">מדי ספורט תקניים</div>
+                                  <br /> ועם
+                                  <div class="emphasis">מגבת אישית</div>
+                                </div>
+                                <div className="contentTopped">
+                                  <img src={doctor} class="icon" alt="doctor" />
+                                  כל מתאמן
+                                  <div class="emphasis">מעל גיל 23 </div>
+                                  או מתחת
+                                  <div class="emphasis">לפרופיל 72</div>
+                                  נדרש
+                                  <div class="emphasis"> לאישור רופא </div>
+                                  המאשר לו פעילות בחד”כ.
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -226,10 +312,16 @@ const RecreationAndFitness = () => {
                         <div className="imageDisplay">
                           <Swiper
                             spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                              delay: 2500,
+                              disableOnInteraction: false,
+                            }}
                             pagination={{
                               clickable: true,
                             }}
-                            modules={[Pagination]}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
                           >
                             <SwiperSlide>
@@ -310,10 +402,10 @@ const RecreationAndFitness = () => {
                               />
                               <div>
                                 אימוני סטודיו זמינים לכל הבהדים בתאום מול ירין:
-                                <Link class="link" to={"tel:97254-467-5273"}>
+                                <a class="link" href="tel:97254-467-5273">
                                   {" "}
                                   <div class="text">054-467-5273</div>{" "}
-                                </Link>
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -328,10 +420,16 @@ const RecreationAndFitness = () => {
                         <div className="imageDisplay">
                           <Swiper
                             spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                              delay: 2500,
+                              disableOnInteraction: false,
+                            }}
                             pagination={{
                               clickable: true,
                             }}
-                            modules={[Pagination]}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
                           >
                             <SwiperSlide>
@@ -406,10 +504,16 @@ const RecreationAndFitness = () => {
                         <div className="imageDisplay">
                           <Swiper
                             spaceBetween={30}
+                            centeredSlides={true}
+                            autoplay={{
+                              delay: 2500,
+                              disableOnInteraction: false,
+                            }}
                             pagination={{
                               clickable: true,
                             }}
-                            modules={[Pagination]}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
                           >
                             <SwiperSlide>
@@ -459,10 +563,16 @@ const RecreationAndFitness = () => {
               <div className="poolDiv">
                 <Swiper
                   spaceBetween={30}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
                   pagination={{
                     clickable: true,
                   }}
-                  modules={[Pagination]}
+                  navigation={true}
+                  modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper"
                 >
                   <SwiperSlide>
@@ -545,10 +655,16 @@ const RecreationAndFitness = () => {
               <div className="libraryDiv">
                 <Swiper
                   spaceBetween={30}
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
                   pagination={{
                     clickable: true,
                   }}
-                  modules={[Pagination]}
+                  navigation={true}
+                  modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper"
                 >
                   <SwiperSlide>
@@ -609,14 +725,14 @@ const RecreationAndFitness = () => {
                     />
                     <div>
                       אתי הספרנית:
-                      <Link
+                      <a
                         className="detailsPhoneImgDivLink"
-                        to={"tel:+972523393349"}
+                        href="tel:+972523393349"
                       >
                         <div className="detailsPhoneImgDivLinkNumber">
                           0523393349
                         </div>
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

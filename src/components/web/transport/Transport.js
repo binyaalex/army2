@@ -40,7 +40,7 @@ const Transport = () => {
 		<div className='page transport'>
 			<Header header='היסעים' text='בעמוד זה תוכלו למצוא את דרכי ההגעה לבסיס והיציאה מהבסיס.' />
 			<Options />
-			<GallerySwiper imgArr={imgArr} slidesPerView={3} />
+			<GallerySwiper imgArr={imgArr} slidesPerView={3} className='mySwiper bigGallery' />
 		</div>
 	)
 }

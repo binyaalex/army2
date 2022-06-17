@@ -1,11 +1,11 @@
 import SmallHeader from "../repeat/SmallHeader";
-import Gallery from "../repeat/Gallery";
+import GallerySwiper from "../repeat/gallerySwiper/GallerySwiper";
 
 const GalleryDiv = ({icon, displayname, header, imgArr, src, titles}) => {
 	return (
 		<div icon={icon} displayname={displayname}>
 			<SmallHeader title={header} />
-			<Gallery imgArr={imgArr} src={src} titles={titles} />
+			<GallerySwiper imgArr={imgArr} slidesPerView={3} className='mySwiper bigGallery' />
 		</div>
 	)
 }
