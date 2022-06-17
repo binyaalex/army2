@@ -102,7 +102,7 @@ function Appointment() {
           <div className="box_btn">
             <div className="container">
               <div className="btn_area">
-                <Link to="/confirm" className="go_btn">
+                <Link to="#" className="go_btn">
                   שלחי
                 </Link>
               </div>
