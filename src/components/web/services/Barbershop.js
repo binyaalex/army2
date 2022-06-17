@@ -1,6 +1,6 @@
 import SmallHeader from "../repeat/SmallHeader";
 
-const Barbershop = () => {
+const Barbershop = (props) => {
 	return (
 		<div className="barber-shop" displayname="services.json5#barbershop.title" icon="scissors.svg">
 			<SmallHeader title='מספרה' />
@@ -33,9 +33,9 @@ const Barbershop = () => {
 							</div>
 						</openinghours> 
 					</icontext> 
-					<icontext className="flex-end" icon="icon-phone-black.svg">
+					<icontext className="flex-end" icon="icon-phone-black.svg" onClick={() => { props.setOpenSideBar(!props.openSideBar)}}>
 						<img src="/images/icon-phone-black.033ad4fd.svg" className="icon"/>
-						לקביעת תור: 
+							לקביעת תור: 
 							<a className="link" href="tel: 972545562343"> 
 								<div className="text"> 054-5562343 </div> 
 							</a> 
