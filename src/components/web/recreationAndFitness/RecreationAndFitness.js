@@ -18,15 +18,13 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 import Accordion from "react-bootstrap/Accordion";
 
-import { Link } from "react-router-dom";
+import gymNotActive from "../../../assets/images/icons/gym-not-active.svg";
+import libraryNotActive from "../../../assets/images/icons/library-not-active.svg";
+import poolNotActive from "../../../assets/images/icons/pool-not-active.svg";
 
-import gymNotActive from "../../../assets/images/icon/gym-not-active.svg";
-import libraryNotActive from "../../../assets/images/icon/library-not-active.svg";
-import poolNotActive from "../../../assets/images/icon/pool-not-active.svg";
-
-import gymActive from "../../../assets/images/icon/gym-active.svg";
-import libraryActive from "../../../assets/images/icon/library-active.svg";
-import poolActive from "../../../assets/images/icon/pool-active.svg";
+import gymActive from "../../../assets/images/icons/gym-active.svg";
+import libraryActive from "../../../assets/images/icons/library-active.svg";
+import poolActive from "../../../assets/images/icons/pool-active.svg";
 
 import library1 from "../../../assets/images/recreationAndFitness/library/library1.jpg";
 import library2 from "../../../assets/images/recreationAndFitness/library/library2.jpg";
@@ -39,18 +37,18 @@ import library8 from "../../../assets/images/recreationAndFitness/library/librar
 import library9 from "../../../assets/images/recreationAndFitness/library/library9.jpg";
 import library10 from "../../../assets/images/recreationAndFitness/library/library10.jpg";
 
-import textUnderlineBlue from "../../../assets/images/icon/title-underline-blue.svg";
-import textUnderlineBlack from "../../../assets/images/icon/title-underline-black.svg";
+import textUnderlineBlue from "../../../assets/images/icons/title-underline-blue.svg";
+import textUnderlineBlack from "../../../assets/images/icons/title-underline-black.svg";
 
-import detailsTime from "../../../assets/images/icon/time.svg";
-import detailsPhone from "../../../assets/images/icon/phone.svg";
+import detailsTime from "../../../assets/images/icons/time.svg";
+import detailsPhone from "../../../assets/images/icons/phone.svg";
 
 import pool1 from "../../../assets/images/recreationAndFitness/pool/pool1.jpg";
 import pool2 from "../../../assets/images/recreationAndFitness/pool/pool2.jpg";
 import pool3 from "../../../assets/images/recreationAndFitness/pool/pool3.jpg";
 
-import girl from "../../../assets/images/icon/girl.svg";
-import boy from "../../../assets/images/icon/boy.svg";
+import girl from "../../../assets/images/icons/girl.svg";
+import boy from "../../../assets/images/icons/boy.svg";
 
 import gym1 from "../../../assets/images/recreationAndFitness/gym/gym/gym1.jpg";
 import gym2 from "../../../assets/images/recreationAndFitness/gym/gym/gym2.jpg";
@@ -64,8 +62,8 @@ import gym9 from "../../../assets/images/recreationAndFitness/gym/gym/gym9.jpg";
 import gym10 from "../../../assets/images/recreationAndFitness/gym/gym/gym10.jpg";
 import gym11 from "../../../assets/images/recreationAndFitness/gym/gym/gym11.jpg";
 
-import location from "../../../assets/images/icon/location.svg";
-import register from "../../../assets/images/icon/register.svg";
+import location from "../../../assets/images/icons/location.svg";
+import register from "../../../assets/images/icons/register.svg";
 
 import studioRooms1 from "../../../assets/images/recreationAndFitness/gym/studioRooms/studioRooms1.jpg";
 import studioRooms2 from "../../../assets/images/recreationAndFitness/gym/studioRooms/studioRooms2.jpg";
@@ -73,8 +71,8 @@ import studioRooms3 from "../../../assets/images/recreationAndFitness/gym/studio
 import studioRooms4 from "../../../assets/images/recreationAndFitness/gym/studioRooms/studioRooms4.jpg";
 import studioRooms5 from "../../../assets/images/recreationAndFitness/gym/studioRooms/studioRooms5.jpg";
 
-import glove from "../../../assets/images/icon/glove.svg";
-import weights from "../../../assets/images/icon/weights.svg";
+import glove from "../../../assets/images/icons/glove.svg";
+import weights from "../../../assets/images/icons/weights.svg";
 
 import hallAndSports1 from "../../../assets/images/recreationAndFitness/gym/hallAndSports/hallAndSports1.jpg";
 import hallAndSports2 from "../../../assets/images/recreationAndFitness/gym/hallAndSports/hallAndSports2.jpg";
@@ -89,11 +87,13 @@ import fitnessGardens2 from "../../../assets/images/recreationAndFitness/gym/fit
 import fitnessGardens3 from "../../../assets/images/recreationAndFitness/gym/fitnessGardens/fitnessGardens3.jpg";
 import fitnessGardens4 from "../../../assets/images/recreationAndFitness/gym/fitnessGardens/fitnessGardens4.jpg";
 
-import close from "../../../assets/images/icon/close.svg";
-import towel from "../../../assets/images/icon/towel.svg";
-import doctor from "../../../assets/images/icon/doctor.svg";
+import close from "../../../assets/images/icons/close.svg";
+import towel from "../../../assets/images/icons/towel.svg";
+import doctor from "../../../assets/images/icons/doctor.svg";
+import ChatBot from "../chat/ChatBot";
 
 const RecreationAndFitness = () => {
+
   return (
     <>
       <div className="page recreationAndFitnessPage">
@@ -104,21 +104,43 @@ const RecreationAndFitness = () => {
 
         <div className="content">
           <div className="navigator">
-            <ScrollLink className="gym" smooth spy to="gym">
+            <ScrollLink
+              offset={-50}
+              duration={50}
+              className="gym"
+              smooth
+              spy
+              to="gym"
+            >
               <img src={gymNotActive} className="notActiveIcon" />
               <img src={gymActive} className="activeIcon" />
-              <div className="hover-text">כושר</div>
+              <div className="hoverText">כושר</div>
             </ScrollLink>
-            <ScrollLink className="pool" smooth spy to="pool">
+            <ScrollLink
+              offset={-50}
+              duration={50}
+              className="pool"
+              smooth
+              spy
+              to="pool"
+            >
               <img src={libraryNotActive} className="notActiveIcon" />
               <img src={libraryActive} className="activeIcon" />
-              <div className="hover-text">בריכה</div>
+              <div className="hoverText">בריכה</div>
             </ScrollLink>
-            <ScrollLink className="library" smooth spy to="library">
+            <ScrollLink
+              offset={-50}
+              duration={50}
+              className="library"
+              smooth
+              spy
+              to="library"
+            >
               <img src={poolNotActive} className="notActiveIcon" />
               <img src={poolActive} className="activeIcon" />
-              <div className="hover-text">ספרייה</div>
+              <div className="hoverText">ספרייה</div>
             </ScrollLink>
+            <ChatBot />
           </div>
           <div className="textArea">
             <div id="gym" className="gymText">
@@ -200,18 +222,18 @@ const RecreationAndFitness = () => {
                               />
                               <div className="openingHours">
                                 <div className="hoursOne">
-                                  <div class="emphasis">א׳ - ד׳: </div>
+                                  <div className="emphasis">א׳ - ד׳: </div>
                                   <div>22:00 - 07:00</div>
                                 </div>
                                 <div className="hoursTwo">
-                                  <div class="emphasis">ה׳: </div>
+                                  <div className="emphasis">ה׳: </div>
                                   <div>10:30 - 07:00</div>
                                 </div>
                                 <div className="hoursThree">
-                                  <div class="emphasis">ו׳: </div>
+                                  <div className="emphasis">ו׳: </div>
                                   <div>13:00 - 07:00</div>
                                 </div>
-                                <div class="note">bsd</div>
+                                <div className="note">bsd</div>
                               </div>
                             </div>
                             <div className="registerDiv">
@@ -222,13 +244,13 @@ const RecreationAndFitness = () => {
                               />
                               <div className="openingHours">
                                 <div>
-                                  <div class="emphasis">א׳ - ד׳: </div>
+                                  <div className="emphasis">א׳ - ד׳: </div>
                                   <div>22:00 - 07:00</div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="date">מתוקף ל-9/12/1911</div>
+                          <div className="date">מתוקף ל-9/12/1911</div>
                           <div className="gymFacility">
                             <div className="bhdSchedule">
                               <div className="gymFacilityTitleDiv">
@@ -266,7 +288,9 @@ const RecreationAndFitness = () => {
                                     alt="register"
                                   />
                                   הכניסה לחדר הכושר מותנת בהצגת
-                                  <div class="emphasis">מנוי וחוגר בלבד </div>
+                                  <div className="emphasis">
+                                    מנוי וחוגר בלבד{" "}
+                                  </div>
                                 </div>
                                 <div className="contentTopped">
                                   <img
@@ -274,28 +298,40 @@ const RecreationAndFitness = () => {
                                     className="icon"
                                     alt="close"
                                   />
-                                  <div class="emphasis">אין להכנס</div>
+                                  <div className="emphasis">אין להכנס</div>
                                   לחדר הכושר
-                                  <div class="emphasis">ללא מדריך</div>
+                                  <div className="emphasis">ללא מדריך</div>
                                   נוכח או
-                                  <div class="emphasis">לאחר שעות הפעילות</div>
+                                  <div className="emphasis">
+                                    לאחר שעות הפעילות
+                                  </div>
                                 </div>
                                 <div className="contentTopped">
-                                  <img src={towel} class="icon" alt="towel" />
+                                  <img
+                                    src={towel}
+                                    className="icon"
+                                    alt="towel"
+                                  />
                                   כל מתאמן מחויב להגיע
                                   <br /> על
-                                  <div class="emphasis">מדי ספורט תקניים</div>
+                                  <div className="emphasis">
+                                    מדי ספורט תקניים
+                                  </div>
                                   <br /> ועם
-                                  <div class="emphasis">מגבת אישית</div>
+                                  <div className="emphasis">מגבת אישית</div>
                                 </div>
                                 <div className="contentTopped">
-                                  <img src={doctor} class="icon" alt="doctor" />
+                                  <img
+                                    src={doctor}
+                                    className="icon"
+                                    alt="doctor"
+                                  />
                                   כל מתאמן
-                                  <div class="emphasis">מעל גיל 23 </div>
+                                  <div className="emphasis">מעל גיל 23 </div>
                                   או מתחת
-                                  <div class="emphasis">לפרופיל 72</div>
+                                  <div className="emphasis">לפרופיל 72</div>
                                   נדרש
-                                  <div class="emphasis"> לאישור רופא </div>
+                                  <div className="emphasis"> לאישור רופא </div>
                                   המאשר לו פעילות בחד”כ.
                                 </div>
                               </div>
@@ -359,24 +395,24 @@ const RecreationAndFitness = () => {
                         <div className="details">
                           <div className="flexible">
                             <div className="firstCentered">
-                              <img src={glove} class="icon" />
+                              <img src={glove} className="icon" />
                               <div>
                                 <b>אימוני אירובי:</b>
                                 <div className="openingHours">
                                   <div className="hours">
-                                    <div class="emphasis">א׳: </div>
+                                    <div className="emphasis">א׳: </div>
                                     <div>22:00 - 07:00</div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                             <div className="firstCentered">
-                              <img src={weights} class="icon" />
+                              <img src={weights} className="icon" />
                               <div>
                                 <b>אימוני עיצוב וחיטוב:</b>
                                 <div className="openingHours">
                                   <div className="hours">
-                                    <div class="emphasis">א׳: </div>
+                                    <div className="emphasis">א׳: </div>
                                     <div>22:00 - 07:00</div>
                                   </div>
                                 </div>
@@ -386,12 +422,12 @@ const RecreationAndFitness = () => {
                           <div className="altColor">
                             <div>
                               3 חדרי סטודיו שונים עם
-                              <div class="emphasis">מראות ומערכת שמע</div>.
+                              <div className="emphasis">מראות ומערכת שמע</div>.
                             </div>
                             <br />
                             <div>
                               אחד מחדרי הסטודיו מותאם
-                              <div class="emphasis">לשיעורי ספינינג </div>
+                              <div className="emphasis">לשיעורי ספינינג </div>
                               הכולל מספר רב של אופני ספינינג.
                             </div>
                             <div className="flexEnd">
@@ -402,9 +438,9 @@ const RecreationAndFitness = () => {
                               />
                               <div>
                                 אימוני סטודיו זמינים לכל הבהדים בתאום מול ירין:
-                                <a class="link" href="tel:97254-467-5273">
+                                <a className="link" href="tel:97254-467-5273">
                                   {" "}
-                                  <div class="text">054-467-5273</div>{" "}
+                                  <div className="text">054-467-5273</div>{" "}
                                 </a>
                               </div>
                             </div>
@@ -545,9 +581,9 @@ const RecreationAndFitness = () => {
                         <div className="details">
                           ברחבי הבסיס באזורי בהד”ים שונים ישנן גינות כושר
                           חיצוניות ובהן
-                          <div class="emphasis">מתקני כושר</div>
+                          <div className="emphasis">מתקני כושר</div>
                           שונים הניתנים לשימוש
-                          <div class="emphasis">בכל מהלך היום</div>
+                          <div className="emphasis">בכל מהלך היום</div>
                         </div>
                       </div>
                     </Accordion.Body>

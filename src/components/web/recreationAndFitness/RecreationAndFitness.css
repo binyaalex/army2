@@ -71,21 +71,22 @@
   border-color: var(--absolute-black);
 }
 
-.recreationAndFitnessPage .content .navigator .hover-text {
+.recreationAndFitnessPage .content .navigator .hoverText {
   display: none;
 }
 
-.recreationAndFitnessPage .content .navigator a:hover > .hover-text {
+.recreationAndFitnessPage .content .navigator a:hover > .hoverText {
   display: block;
   position: absolute;
   top: 100%;
   margin-top: 0.25em;
   white-space: nowrap;
+  font-size: 2.5vmin;
+  color: var(--absolute-black);
 }
 
 .recreationAndFitnessPage .content .textArea .libraryText {
-  margin-bottom: 4em;
-  clear: both;
+  padding-top: 1em;
 }
 
 .recreationAndFitnessPage .content .textArea .libraryText .libraryDiv .swiper {
@@ -321,7 +322,7 @@
 }
 
 .recreationAndFitnessPage .content .textArea .poolText {
-  margin-bottom: 4em;
+  padding-top: 1em;
 }
 
 .recreationAndFitnessPage .content .textArea .poolText .titleDiv {
@@ -625,6 +626,10 @@
   display: contents;
   color: var(--emphasis-color);
   font-weight: 700;
+}
+
+.recreationAndFitnessPage .content .textArea .gymText {
+  padding-top: 1em;
 }
 
 .recreationAndFitnessPage .content .textArea .gymText .titleDiv {
@@ -1202,11 +1207,11 @@
   .prepNote
   .notes
   .contentTopped img {
-    width: 3.4em;
+    width: var(--icon-width);
     margin-inline-end: calc(var(--max-icon-width, var(--icon-width))/2 - var(--icon-width)/2 + 1em);
     margin-inline-start: calc(var(--max-icon-width, var(--icon-width))/2 - var(--icon-width)/2);
     align-self: flex-start;
-    --icon-width: 6vmin;
+    --icon-width: 7.25vmin;
   }
 
 .recreationAndFitnessPage
