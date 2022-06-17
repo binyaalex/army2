@@ -1,18 +1,19 @@
 import React, { useState } from "react";
-// import Head from "../../repeats/head/Head";
-// import DoctorList from "../../regularPages/doctorList/DoctorList";
-// import ThisWeek from "./ThisWeek";
-// import MeetBtn from "./MeetBtn";
+import { Link } from "react-router-dom";
+
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 import "./Appointment.css";
 
-// import ShapIcon from "../../../assets/images/Shape.png";
-// import CheckCircleIcon from "../../../assets/images/Checkcircle.png";
+import DoctorList from "./doctorList/DoctorList";
+import ThisWeek from "./weekList/ThisWeek";
+import MeetBtn from "./meet/MeetBtn";
 
-import DatePicker from "react-datepicker";
-
-import "react-datepicker/dist/react-datepicker.css";
-import { Link } from "react-router-dom";
+import SearchIcon from "@mui/icons-material/Search";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import MoreTimeIcon from "@mui/icons-material/MoreTime";
 
 function Appointment() {
   const [startDate, setStartDate] = useState(new Date());
@@ -24,14 +25,10 @@ function Appointment() {
   return (
     <>
       <div className="PageDad">
-      <div className="appointment_pages">
+        <div className="appointment_pages">
           <div className="searchbox_container">
             <div className="searchbox_heading">
-              <i
-                className="fa fa-chevron-down"
-                aria-hidden="true"
-                style={{ fontSize: "15px" }}
-              ></i>
+              <KeyboardArrowDownIcon />
               <h2>בחרי רופא</h2>
             </div>
 
@@ -41,19 +38,15 @@ function Appointment() {
                 type="search"
                 placeholder="חפשי לפי שם או התמחות"
               />
-              <i className="fa fa-search"></i>
+              <SearchIcon className="search_icon" />
             </div>
           </div>
 
-          {/* <DoctorList /> */}
+          <DoctorList />
 
           <div className="dateselector_container">
             <div className="dateselector_heading">
-              <i
-                className="fa fa-chevron-down"
-                aria-hidden="true"
-                style={{ fontSize: "15px" }}
-              ></i>
+              <KeyboardArrowDownIcon />
               <h2>בחרי תאריך</h2>
             </div>
             <div
@@ -69,19 +62,15 @@ function Appointment() {
                 onClickOutside={() => setCalendarIsOpen(!calendarIsOpen)}
               />
 
-              {/* <img src={ShapIcon} alt="shap" /> */}
+              <CalendarTodayIcon />
             </div>
           </div>
 
-          {/* <ThisWeek /> */}
+          <ThisWeek />
 
           <div className="timeselector_container">
             <div className="timeselector_heading">
-              <i
-                className="fa fa-chevron-down"
-                aria-hidden="true"
-                style={{ fontSize: "15px" }}
-              ></i>
+              <KeyboardArrowDownIcon />
               <h2>בחרי שעה</h2>
             </div>
             <div
@@ -101,14 +90,14 @@ function Appointment() {
                   setTimeCalendarIsOpen(!timeCalendarIsOpen)
                 }
               />
-              {/* <img src={CheckCircleIcon} alt="circle" /> */}
+              <MoreTimeIcon />
             </div>
           </div>
 
           <div className="timeselectoroption_container">
-            {/* <MeetBtn text="פגישה" />
+            <MeetBtn text="פגישה" />
             <MeetBtn text="שיחת וידאו" />
-            <MeetBtn text="שיחת טלפון" /> */}
+            <MeetBtn text="שיחת טלפון" />
           </div>
           <div className="box_btn">
             <div className="container">
