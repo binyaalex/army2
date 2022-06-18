@@ -6,14 +6,16 @@ import { styled } from "@mui/system";
 import { ScrollingCarousel } from "@trendyol-js/react-carousel";
 import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import CloseIcon from "@mui/icons-material/Close";
+import StarIcon from "@mui/icons-material/Star";
+import { Add } from "@mui/icons-material";
+import AddBoxIcon from "@mui/icons-material/AddBox";
+import SendIcon from "@mui/icons-material/Send";
 
 import { Checkbox } from "@mui/material";
 
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-
-import { Add } from "@mui/icons-material";
 
 import {
   buttonUnstyledClasses,
@@ -27,9 +29,7 @@ import {
 // CSS
 import "./ChatBot.css";
 
-import chat_main_icon from "../../../assets/images/icons/chat.png";
-
-import ChatIcon from '@mui/icons-material/Chat';
+import ChatIcon from "@mui/icons-material/Chat";
 
 import chatSmile from "../../../assets/images/icons/chat_smile.png";
 import chatMike from "../../../assets/images/icons/chat_mike.png";
@@ -266,7 +266,7 @@ export default function ChatBot(props) {
                     placeholder="Type something…"
                   />
                   <img src={chatMike} className="chatMike" alt="mike" />
-                  <img src={chatSend} className="chatSend" alt="send" />
+                  <SendIcon className="chatSend" />
                 </div>
               </div>
             </div>
@@ -290,7 +290,7 @@ export default function ChatBot(props) {
               />
               <img src={chatSmile} className="chatFooterSmile" alt="smile" />
             </div>
-            <img src={chatSend} className="chatFooterSend" alt="send" />
+            <SendIcon className="chatFooterSend" />
           </div>
         </div>
       </>
@@ -306,11 +306,14 @@ export default function ChatBot(props) {
       <>
         <div className="chatHead">
           <img src={search} className="chatHeaderSearch" alt="search" />
-          <img
-            src={plus}
+          <AddBoxIcon
             className="chatHeaderPlus"
-            alt="plus"
-            onClick={() => setNewGroup(true)}
+            onClick={() => {
+              setSingleChat(false);
+              setGroupChat(false);
+              setCreateNewGroup(false);
+              setNewGroup(true);
+            }}
           />
           <h1 className="chatHeaderText">Chats</h1>
           <img src={menu} className="chatHeaderMenu" alt="menu" />
@@ -587,11 +590,7 @@ export default function ChatBot(props) {
                       Heartburn pills
                     </p>
                     <span className="singleChatInnerCardStarDiv">
-                      <img
-                        className="singleChatInnerCardStarDivImg"
-                        src={star}
-                        alt="aa"
-                      />
+                      <StarIcon className="singleChatInnerCardStarDivImg" />
                       <p className="singleChatInnerCardStarDivP">
                         4.6 (1435 reviews)
                       </p>
@@ -648,10 +647,8 @@ export default function ChatBot(props) {
               className="groupChatHeaderThreeDots"
               alt="three_dots"
             />
-            <img
-              src={plus}
+            <AddBoxIcon
               className="groupChatHeaderPlus"
-              alt="plus"
               onClick={() => {
                 setSingleChat(false);
                 setGroupChat(false);
@@ -746,11 +743,7 @@ export default function ChatBot(props) {
                     Beer Sheva, Trinity Rd, 208
                   </p>
                   <span className="groupChatInnerCardStarDiv">
-                    <img
-                      className="groupChatInnerCardStarDivImg"
-                      src={star}
-                      alt="aa"
-                    />
+                    <StarIcon className="groupChatInnerCardStarDivImg" />
                     <p className="groupChatInnerCardStarDivP">
                       4.6 (1435 reviews)
                     </p>
@@ -773,6 +766,7 @@ export default function ChatBot(props) {
   const renderNewGroupchat = () => {
     return (
       <>
+        {console.log("first")}
         <Typography>
           <div className="newGroupHeader">
             <img
@@ -854,6 +848,7 @@ export default function ChatBot(props) {
                           let temp = [];
                           if (e.target.checked) {
                             temp.push(item);
+                            console.log(item);
                             setSelectMemeberList([...selectMemeberlist, item]);
                           } else {
                             let removeValue = selectMemeberlist.filter(
@@ -979,8 +974,8 @@ export default function ChatBot(props) {
   };
   return (
     <>
+      {console.log(selectMemeberlist)}
       <div onClick={handleClick} className="mainChat">
-        {/* <img className="chat" src={chat_main_icon} /> */}
         <ChatIcon />
       </div>
       <div className="main_chat_section">
