@@ -90,7 +90,7 @@
 }
 
 .recreationAndFitnessPage .content .textArea .libraryText .libraryDiv .swiper {
-  width: 32vw;
+  width: 100%;
   height: 22vw;
   float: right;
 }
@@ -127,11 +127,11 @@
 }
 
 .recreationAndFitnessPage .content .textArea {
-  margin-inline-start: 8vmax;
+  margin-inline-start: calc(100% - 90%);
 }
 
 .recreationAndFitnessPage .content .textArea .libraryText .details {
-  padding-inline-start: 3em;
+  padding-inline-start: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -230,7 +230,6 @@
   .libraryText
   .details
   .detailsPhoneImgDiv {
-  margin-inline-start: 2em;
   margin-top: 1em;
   align-items: flex-start;
   --icon-width: 6vmin;
@@ -346,7 +345,7 @@
 }
 
 .recreationAndFitnessPage .content .textArea .poolText .poolDiv .swiper {
-  width: 32vw;
+  width: 100%;
   height: 22vw;
   float: right;
 }
@@ -358,7 +357,7 @@
 }
 
 .recreationAndFitnessPage .content .textArea .poolText .details {
-  padding-inline-start: 3em;
+  padding: 1em;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -586,9 +585,21 @@
   font-weight: 700;
 }
 
-.recreationAndFitnessPage .content .textArea .gymText .accordionDiv .gymContent .gymImageAndText .details .timeDiv .openingHours
-  .hoursOne div:last-child, .hoursTwo div:last-child, .hoursThree div:last-child {
-    margin-right: 5px;
+.recreationAndFitnessPage
+  .content
+  .textArea
+  .gymText
+  .accordionDiv
+  .gymContent
+  .gymImageAndText
+  .details
+  .timeDiv
+  .openingHours
+  .hoursOne
+  div:last-child,
+.hoursTwo div:last-child,
+.hoursThree div:last-child {
+  margin-right: 5px;
 }
 
 .recreationAndFitnessPage
@@ -679,10 +690,10 @@
   .accordionDiv
   .accordion-button::after {
   margin-left: 10px;
-  width: 2.75vmax;
+  width: 4vmax;
   height: 2.75vmax;
   background-size: 1.75rem;
-  transition: transform .6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 .recreationAndFitnessPage
@@ -722,8 +733,9 @@
   .content
   .textArea
   .gymText
-  .accordionDiv .accordion-button:not(.collapsed)::after {
-    background-image: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
+  .accordionDiv
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
 }
 
 .recreationAndFitnessPage
@@ -744,7 +756,7 @@
   .gymImageAndText
   .imageDisplay
   .swiper {
-  width: 32vw;
+  width: 100%;
   height: 22vw;
   float: right;
 }
@@ -772,7 +784,7 @@
   .gymContent
   .gymImageAndText
   .details {
-  padding-inline-start: 3em;
+  padding: 1em;
   flex: 1 1;
   display: flex;
   flex-direction: column;
@@ -1180,11 +1192,11 @@
   .gymFacility
   .prepNote
   .notes {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .recreationAndFitnessPage
+.recreationAndFitnessPage
   .content
   .textArea
   .gymText
@@ -1195,14 +1207,14 @@
   .prepNote
   .notes
   .contentTopped {
-    width: 50%;
-    margin: 0 0 6.5% auto;
-    align-items: flex-start;
-    --icon-width: 6vmin;
-    display: flex;
-  }
+  width: 50%;
+  margin: 0 0 6.5% auto;
+  align-items: flex-start;
+  --icon-width: 6vmin;
+  display: flex;
+}
 
-  .recreationAndFitnessPage
+.recreationAndFitnessPage
   .content
   .textArea
   .gymText
@@ -1212,13 +1224,18 @@
   .gymFacility
   .prepNote
   .notes
-  .contentTopped img {
-    width: var(--icon-width);
-    margin-inline-end: calc(var(--max-icon-width, var(--icon-width))/2 - var(--icon-width)/2 + 1em);
-    margin-inline-start: calc(var(--max-icon-width, var(--icon-width))/2 - var(--icon-width)/2);
-    align-self: flex-start;
-    --icon-width: 7.25vmin;
-  }
+  .contentTopped
+  img {
+  width: var(--icon-width);
+  margin-inline-end: calc(
+    var(--max-icon-width, var(--icon-width)) / 2 - var(--icon-width) / 2 + 1em
+  );
+  margin-inline-start: calc(
+    var(--max-icon-width, var(--icon-width)) / 2 - var(--icon-width) / 2
+  );
+  align-self: flex-start;
+  --icon-width: 7.25vmin;
+}
 
 .recreationAndFitnessPage
   .content
@@ -1228,7 +1245,7 @@
   .studioRoomsContent
   .imageDisplay
   .swiper {
-  width: 32vw;
+  width: 100%;
   height: 22vw;
   float: right;
 }
@@ -1254,7 +1271,7 @@
   .accordionDiv
   .studioRoomsContent
   .details {
-  padding-inline-start: 3em;
+  padding: 1em;
   flex: 1 1;
   display: flex;
   flex-direction: column;
@@ -1426,7 +1443,7 @@
   .hallAndSportsContent
   .imageDisplay
   .swiper {
-  width: 32vw;
+  width: 100%;
   height: 22vw;
   float: right;
 }
@@ -1454,7 +1471,7 @@
   .details {
   display: flex;
   flex-direction: column;
-  padding-inline-start: 3em;
+  padding: 1em;
   flex: 1;
   --emphasis-color: var(--focus-color);
   margin-bottom: 9em;
@@ -1480,7 +1497,7 @@
   .fitnessGardensContent
   .imageDisplay
   .swiper {
-  width: 32vw;
+  width: 100%;
   height: 22vw;
   float: right;
 }
@@ -1508,17 +1525,19 @@
   .details {
   display: flex;
   flex-direction: column;
-  padding-inline-start: 3em;
+  padding: 1em;
   flex: 1;
   --emphasis-color: var(--focus-color);
   margin-bottom: 15em;
   max-width: 25em;
 }
 
-.swiper .swiper-button-next, .swiper .swiper-button-prev {
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
   color: white;
 }
 
-.swiper .swiper-button-next:after, .swiper .swiper-button-prev:after {
+.swiper .swiper-button-next:after,
+.swiper .swiper-button-prev:after {
   font-weight: 700;
-} 
+}
