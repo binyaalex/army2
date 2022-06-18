@@ -91,7 +91,7 @@
 
 .recreationAndFitnessPage .content .textArea .libraryText .libraryDiv .swiper {
   width: 100%;
-  height: 22vw;
+  height: auto;
   float: right;
 }
 
@@ -346,7 +346,7 @@
 
 .recreationAndFitnessPage .content .textArea .poolText .poolDiv .swiper {
   width: 100%;
-  height: 22vw;
+  height: auto;
   float: right;
 }
 
@@ -757,7 +757,7 @@
   .imageDisplay
   .swiper {
   width: 100%;
-  height: 22vw;
+  height: auto;
   float: right;
 }
 
@@ -1246,7 +1246,7 @@
   .imageDisplay
   .swiper {
   width: 100%;
-  height: 22vw;
+  height: auto;
   float: right;
 }
 
@@ -1444,7 +1444,7 @@
   .imageDisplay
   .swiper {
   width: 100%;
-  height: 22vw;
+  height: auto;
   float: right;
 }
 
@@ -1498,7 +1498,7 @@
   .imageDisplay
   .swiper {
   width: 100%;
-  height: 22vw;
+  height: auto;
   float: right;
 }
 

@@ -257,87 +257,99 @@ const RecreationAndFitness = () => {
                           </div>
                           <div className="date">מתוקף ל-9/12/1911</div>
                           <div className="gymFacility">
-                            <div className="bhdSchedule">
-                              <div className="gymFacilityTitleDiv">
-                                <div className="title"> שיבוצי שעות</div>
-                                <img
-                                  className="titleUnderline"
-                                  src={textUnderlineBlack}
-                                />
-                              </div>
-                              <div className="coronaWarn">
-                                <div className="warnSign">!</div>
-                                <div className="warnBody">
-                                  {" "}
-                                  בתקופת הקורונה, הכניסה לחד"כ היא על בסיס
-                                  קפסולות. למידע, פנו למפקדיכם!{" "}
-                                </div>
-                              </div>
-                              <div className="emphasis">
-                                יש להרשם מראש אצל מדא"ג הבה"ד בכדי להכנס לחד"כ
-                              </div>
-                            </div>
-                            <div className="prepNote">
-                              <div className="gymFacilityTitleDiv">
-                                <div className="title"> שיבוצי שעות</div>
-                                <img
-                                  className="titleUnderline"
-                                  src={textUnderlineBlack}
-                                />
-                              </div>
-                              <div className="notes">
-                                <div className="contentTopped">
-                                  <img
-                                    src={register}
-                                    className="icon"
-                                    alt="register"
-                                  />
-                                  הכניסה לחדר הכושר מותנת בהצגת
+                            <div className="row">
+                              <div className="col-md-6 col-sm-12">
+                                <div className="bhdSchedule">
+                                  <div className="gymFacilityTitleDiv">
+                                    <div className="title"> שיבוצי שעות</div>
+                                    <img
+                                      className="titleUnderline"
+                                      src={textUnderlineBlack}
+                                    />
+                                  </div>
+                                  <div className="coronaWarn">
+                                    <div className="warnSign">!</div>
+                                    <div className="warnBody">
+                                      {" "}
+                                      בתקופת הקורונה, הכניסה לחד"כ היא על בסיס
+                                      קפסולות. למידע, פנו למפקדיכם!{" "}
+                                    </div>
+                                  </div>
                                   <div className="emphasis">
-                                    מנוי וחוגר בלבד{" "}
+                                    יש להרשם מראש אצל מדא"ג הבה"ד בכדי להכנס
+                                    לחד"כ
                                   </div>
                                 </div>
-                                <div className="contentTopped">
-                                  <img
-                                    src={close}
-                                    className="icon"
-                                    alt="close"
-                                  />
-                                  <div className="emphasis">אין להכנס</div>
-                                  לחדר הכושר
-                                  <div className="emphasis">ללא מדריך</div>
-                                  נוכח או
-                                  <div className="emphasis">
-                                    לאחר שעות הפעילות
+                              </div>
+                              <div className="col-md-6 col-sm-12">
+                                <div className="prepNote">
+                                  <div className="gymFacilityTitleDiv">
+                                    <div className="title"> שיבוצי שעות</div>
+                                    <img
+                                      className="titleUnderline"
+                                      src={textUnderlineBlack}
+                                    />
                                   </div>
-                                </div>
-                                <div className="contentTopped">
-                                  <img
-                                    src={towel}
-                                    className="icon"
-                                    alt="towel"
-                                  />
-                                  כל מתאמן מחויב להגיע
-                                  <br /> על
-                                  <div className="emphasis">
-                                    מדי ספורט תקניים
+                                  <div className="notes">
+                                    <div className="contentTopped">
+                                      <img
+                                        src={register}
+                                        className="icon"
+                                        alt="register"
+                                      />
+                                      הכניסה לחדר הכושר מותנת בהצגת
+                                      <div className="emphasis">
+                                        מנוי וחוגר בלבד{" "}
+                                      </div>
+                                    </div>
+                                    <div className="contentTopped">
+                                      <img
+                                        src={close}
+                                        className="icon"
+                                        alt="close"
+                                      />
+                                      <div className="emphasis">אין להכנס</div>
+                                      לחדר הכושר
+                                      <div className="emphasis">ללא מדריך</div>
+                                      נוכח או
+                                      <div className="emphasis">
+                                        לאחר שעות הפעילות
+                                      </div>
+                                    </div>
+                                    <div className="contentTopped">
+                                      <img
+                                        src={towel}
+                                        className="icon"
+                                        alt="towel"
+                                      />
+                                      כל מתאמן מחויב להגיע
+                                      <br /> על
+                                      <div className="emphasis">
+                                        מדי ספורט תקניים
+                                      </div>
+                                      <br /> ועם
+                                      <div className="emphasis">מגבת אישית</div>
+                                    </div>
+                                    <div className="contentTopped">
+                                      <img
+                                        src={doctor}
+                                        className="icon"
+                                        alt="doctor"
+                                      />
+                                      כל מתאמן
+                                      <div className="emphasis">
+                                        מעל גיל 23{" "}
+                                      </div>
+                                      או מתחת
+                                      <div className="emphasis">לפרופיל 72</div>
+                                      נדרש
+                                      <div className="emphasis">
+                                        {" "}
+                                        לאישור רופא{" "}
+                                      </div>
+                                      המאשר לו פעילות בחד”כ.
+                                    </div>
                                   </div>
-                                  <br /> ועם
-                                  <div className="emphasis">מגבת אישית</div>
-                                </div>
-                                <div className="contentTopped">
-                                  <img
-                                    src={doctor}
-                                    className="icon"
-                                    alt="doctor"
-                                  />
-                                  כל מתאמן
-                                  <div className="emphasis">מעל גיל 23 </div>
-                                  או מתחת
-                                  <div className="emphasis">לפרופיל 72</div>
-                                  נדרש
-                                  <div className="emphasis"> לאישור רופא </div>
-                                  המאשר לו פעילות בחד”כ.
                                 </div>
                               </div>
                             </div>
