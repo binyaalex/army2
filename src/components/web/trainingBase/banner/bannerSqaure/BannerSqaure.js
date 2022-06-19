@@ -11,21 +11,21 @@ import "swiper/css/pagination";
 const BannerSqaure = () => {
   const bannerArr = [
     {
-      image: '',
-      title: "המרכז לטיפול בהריון",
-      detail: "חולון, הלוחמים 62",
+      image: '/images/hospital/banner.jpg',
+      title: `בה"ד 6`,
+      detail: "לוגיסטיקה",
       link: "#",
     },
     {
-      image: '',
-      title: "מרכז רפואי סורוקה",
-      detail: "באר שבע, שדרות רגר  151",
+      image: '/images/hospital/banner.jpg',
+      title: `בה"ד 6`,
+      detail: "לוגיסטיקה",
       link: "#",
     },
     {
-      image: '',
-      title: "בית חולים אסותא",
-      detail: "תל -אביב, יגאל אלון 96",
+      image: '/images/hospital/banner.jpg',
+      title: `בה"ד 6`,
+      detail: "לוגיסטיקה",
       link: "#",
     },
   ];
@@ -33,7 +33,7 @@ const BannerSqaure = () => {
   const slides = bannerArr.map((el, i) => (
     <Container>
       <Link to={"" + el.link + ""}>
-        <img src={el.image.banner} className="bannerImg" alt="banner" />
+        <img src={el.image} className="bannerImg" alt="banner" />
         <div className="bannerDiv">
           <h1 className="bannerDivTitle">{el.title}</h1>
           <p className="bannerDivDetail">{el.detail}</p>
@@ -44,7 +44,7 @@ const BannerSqaure = () => {
 
   return (
     <>
-      <Swiper className="mySwiper">
+      <Swiper className="mySwiper" slidesPerView={1} >
         {slides.map((slideContent, index) => (
           <SwiperSlide key={index} virtualIndex={index}>
             {slideContent}

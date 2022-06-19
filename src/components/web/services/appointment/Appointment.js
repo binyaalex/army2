@@ -29,14 +29,14 @@ function Appointment() {
           <div className="searchbox_container">
             <div className="searchbox_heading">
               <KeyboardArrowDownIcon />
-              <h2>בחרי רופא</h2>
+              <h2>בחר ספר</h2>
             </div>
 
             <div className="searchbox">
               <input
                 id="search"
                 type="search"
-                placeholder="חפשי לפי שם או התמחות"
+                placeholder="חפשי לפי שם "
               />
               <SearchIcon className="search_icon" />
             </div>
@@ -47,7 +47,7 @@ function Appointment() {
           <div className="dateselector_container">
             <div className="dateselector_heading">
               <KeyboardArrowDownIcon />
-              <h2>בחרי תאריך</h2>
+              <h2>בחר תאריך</h2>
             </div>
             <div
               className="dateselector"
@@ -71,7 +71,7 @@ function Appointment() {
           <div className="timeselector_container">
             <div className="timeselector_heading">
               <KeyboardArrowDownIcon />
-              <h2>בחרי שעה</h2>
+              <h2>בחר שעה</h2>
             </div>
             <div
               className="timeselector"
@@ -93,17 +93,17 @@ function Appointment() {
               <MoreTimeIcon />
             </div>
           </div>
-
+{/*
           <div className="timeselectoroption_container">
             <MeetBtn text="פגישה" />
             <MeetBtn text="שיחת וידאו" />
             <MeetBtn text="שיחת טלפון" />
-          </div>
+          </div>*/}
           <div className="box_btn">
             <div className="container">
               <div className="btn_area">
                 <Link to="#" className="go_btn">
-                  שלחי
+                  שלח
                 </Link>
               </div>
             </div>

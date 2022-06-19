@@ -14,10 +14,10 @@ const DoctorList = () => {
         <div className="doctors_area">
           <div className="doctor_heading align-center justify-between">
             <Link to={"/doctors"} className="align-center">
-              לכל הרופאים
+              לכל  הספרים
               <DoubleArrowIcon />
             </Link>
-            <h3>: הרופאים שלנו</h3>
+            <h3>: הספרים שלנו</h3>
           </div>
           <div className="row doctor_box_area">
             <DoctorListSqaure />

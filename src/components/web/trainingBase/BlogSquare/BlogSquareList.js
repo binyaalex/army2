@@ -11,25 +11,25 @@ import "swiper/css/pagination";
 const BlogSquareList = () => {
     const BlogListArr = [
         {
-            image: "/images/web/blogList/blog1.jpg",
-            title: "תרופות לטיפול בכאב וסימפטומים אחרי לידה ",
+            image: "/images/hospital/blog1.jpg",
+            title: `כך תשרדו את  בה"ד 6 - המדריך המלא `,
             link: "/postpage2",
         },
         {
-            image: "/images/web/blogList/blog2.jpg",
-            title: "איך לבנות לוח זמנים לשינה של התינוק שלך ",
+            image: "/images/hospital/blog2.jpg",
+            title: `עיר הבה"דים  - כך תוכלו למצוא כל מה שחיפשתם`,
             link: "/postpage1",
         },
         {
-            image: "/images/web/blogList/blog3.jpg",
-            title: "8 תחליפי הנקה שכל אמא  טרייה צריכה להכיר",
+            image: "/images/hospital/blog3.jpg",
+            title: "טור אישי  של קצינת הלוגיסטיקה מור אלעד ",
             link: "/postpage2",
         },
     ];
 
     const slides = BlogListArr.map((el, index) => (
         <Link to={"" + el.link + ""} key={index}>
-            <img src={el.image} alt="images" />
+            <img className='blogImg' src={el.image} alt="images" />
             <h6 className="image_des_1">{el.title}</h6>
         </Link>
     ));

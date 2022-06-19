@@ -9,7 +9,7 @@ const ServiceListHeader = ({ text, link }) => {
     >
       <Link to={link}>
         <img
-          className="departmensHeaderImg"
+          className="ServiceListHeaderImg"
           src="/images/hospital/viewheb.png"
         />
       </Link>

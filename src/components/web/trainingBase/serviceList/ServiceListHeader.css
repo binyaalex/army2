@@ -1,3 +1,8 @@
 #serviceListHeader a img {
 	max-width: unset;
 }
+
+.ServiceListHeaderImg {
+	width: 100px;
+	height: 21px;
+}

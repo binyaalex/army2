@@ -13,105 +13,97 @@ const DoctorListSqaure = () => {
   const DoctorListArr = [
     {
       image: "/images/hospital/officer1.jpg",
-      h6_text: "חנה לוי",
-      p_text: "גניקולוגית",
+      h6_text: `סא"ל יוסף לוי`,
+      p_text: `מב"ס`,
       span_text: "4.9",
       star_image: { star },
       link: "/doctor",
     },
     {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "חווה פרישברג",
-      p_text: "מילדת",
+      image: "/images/hospital/officer2.jpg",
+      h6_text: `רס"ר  גל שני`,
+      p_text: `סגן מב"ס`,
       span_text: "4.8",
       star_image: { star },
       link: "/doctor",
     },
     {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "דנה בלום",
-      p_text: "דולה",
+      image: "/images/hospital/officer3.jpg",
+      h6_text: `סרן ליאל כהן`,
+      p_text: `קל"ג`,
       span_text: "4.7",
       star_image: { star },
       link: "/doctor",
     },
     {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "לאה מזרחי",
-      p_text: "אחות",
+      image: "/images/hospital/officer4.jpg",
+      h6_text: "סרן עידו זוהר",
+      p_text: `קצ"מ` ,
       span_text: "4.6",
       star_image: { star },
       link: "/doctor",
     },
     {
       image: "/images/hospital/officer1.jpg",
-      h6_text: "חנה לוי",
-      p_text: "גניקולוגית",
+      h6_text: `סא"ל יוסף לוי`,
+      p_text: `מב"ס`,
       span_text: "4.9",
       star_image: { star },
       link: "/doctor",
     },
     {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "חווה פרישברג",
-      p_text: "מילדת",
+      image: "/images/hospital/officer2.jpg",
+      h6_text: `רס"ר  גל שני`,
+      p_text: `סגן מב"ס`,
       span_text: "4.8",
       star_image: { star },
       link: "/doctor",
     },
     {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "דנה בלום",
-      p_text: "דולה",
+      image: "/images/hospital/officer3.jpg",
+      h6_text: `סרן ליאל כהן`,
+      p_text: `קל"ג`,
       span_text: "4.7",
       star_image: { star },
       link: "/doctor",
     },
     {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "לאה מזרחי",
-      p_text: "אחות",
+      image: "/images/hospital/officer4.jpg",
+      h6_text: "סרן עידו זוהר",
+      p_text: `קצ"מ` ,
       span_text: "4.6",
       star_image: { star },
       link: "/doctor",
     },
     {
       image: "/images/hospital/officer1.jpg",
-      h6_text: "חנה לוי",
-      p_text: "גניקולוגית",
+      h6_text: `סא"ל יוסף לוי`,
+      p_text: `מב"ס`,
       span_text: "4.9",
       star_image: { star },
       link: "/doctor",
     },
     {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "חווה פרישברג",
-      p_text: "מילדת",
+      image: "/images/hospital/officer2.jpg",
+      h6_text: `רס"ר  גל שני`,
+      p_text: `סגן מב"ס`,
       span_text: "4.8",
       star_image: { star },
       link: "/doctor",
     },
     {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "דנה בלום",
-      p_text: "דולה",
+      image: "/images/hospital/officer3.jpg",
+      h6_text: `סרן ליאל כהן`,
+      p_text: `קל"ג`,
       span_text: "4.7",
       star_image: { star },
       link: "/doctor",
     },
     {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "לאה מזרחי",
-      p_text: "אחות",
+      image: "/images/hospital/officer4.jpg",
+      h6_text: "סרן עידו זוהר",
+      p_text: `קצ"מ` ,
       span_text: "4.6",
-      star_image: { star },
-      link: "/doctor",
-    },
-    {
-      image: "/images/hospital/officer1.jpg",
-      h6_text: "חנה לוי",
-      p_text: "גניקולוגית",
-      span_text: "4.9",
       star_image: { star },
       link: "/doctor",
     },
@@ -126,10 +118,10 @@ const DoctorListSqaure = () => {
           </div>
           <h6>{el.h6_text}</h6>
           <p>{el.p_text}</p>
-          <div className="start_con">
+          {/*<div className="start_con">
             <span>{el.span_text}</span>
             <img src={el.star_image.star} alt="star" />
-          </div>
+          </div>*/}
         </div>
       </Link>
     </div>
@@ -137,10 +129,10 @@ const DoctorListSqaure = () => {
 
   return (
     <div className='webDoctorList'>
-      <ServiceListHeader text='הרופאות שלנו' link='/doctors' />
+      <ServiceListHeader text='המפקדים שלנו' link='' />
       <Swiper
         spaceBetween={0}
-        slidesPerView={12}
+        slidesPerView={10}
       >
         {slides.map((slideContent, index) => (
           <SwiperSlide key={index} virtualIndex={index}>

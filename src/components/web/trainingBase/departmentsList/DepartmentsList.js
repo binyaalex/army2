@@ -7,33 +7,18 @@ import DepartmentsSquare from "./DepartmentsSquare";
 const DepartmentsList = () => {
   const departmentsListArr = [
     {
-      img: "/images/web/hospital/hospital2.jpg",
-      title: "יולדות",
+      img: "/images/hospital/pc.jpg",
+      title: "מחלקת תקשוב",
       link: "/web/page/department",
     },
     {
-      img: "/images/web/hospital/hospital3.jpg",
-      title: "גינקולוגיה",
+      img: "/images/hospital/afsenaut.jpg",
+      title: "מחלקת אפסנאות",
       link: "/web/page/department",
     },
     {
-      img: "/images/web/hospital/hospital4.jpg",
-      title: "אמהות",
-      link: "/web/page/department",
-    },
-    {
-      img: "/images/web/hospital/hospital5.jpg",
-      title: "תינוקות",
-      link: "/web/page/department",
-    },
-    {
-      img: "/images/web/hospital/hospital6.jpg",
-      title: "ילדים",
-      link: "/web/page/department",
-    },
-    {
-      img: "/images/web/hospital/hospital7.jpg",
-      title: "ניתוחים",
+      img: "/images/hospital/tikshuv.jpg",
+      title: "מחלקת תקשורת",
       link: "/web/page/department",
     },
   ];
