@@ -92,7 +92,31 @@ import towel from "../../../assets/images/icons/towel.svg";
 import doctor from "../../../assets/images/icons/doctor.svg";
 import ChatBot from "../chat/ChatBot";
 
+import Navigator from '../repeat/newNavigator/Navigator'
+
 const RecreationAndFitness = () => {
+
+  const navigatorArr = [
+    {
+      to: 'gym',
+      hoverText: 'כושר ',
+      imgActive: gymActive,
+      imgNotActive: gymNotActive,
+    },
+    {
+      to: 'pool',
+      hoverText: 'בריכה',
+      imgActive: poolActive,
+      imgNotActive: poolNotActive,
+    },
+    {
+      to: 'library',
+      hoverText: 'ספריה',
+      imgActive: libraryActive,
+      imgNotActive: libraryNotActive,
+    },
+  ]
+
   return (
     <>
       <div className="page recreationAndFitnessPage">
@@ -102,7 +126,8 @@ const RecreationAndFitness = () => {
         />
 
         <div className="content">
-          <div className="navigator">
+          <Navigator navigatorArr={navigatorArr} />
+          {/*<div className="navigator">
             <ScrollLink
               offset={-50}
               duration={50}
@@ -123,8 +148,8 @@ const RecreationAndFitness = () => {
               spy
               to="pool"
             >
-              <img src={libraryNotActive} className="notActiveIcon" />
-              <img src={libraryActive} className="activeIcon" />
+              <img src={poolNotActive} className="notActiveIcon" />
+              <img src={poolActive} className="activeIcon" />
               <div className="hoverText">בריכה</div>
             </ScrollLink>
             <ScrollLink
@@ -135,12 +160,12 @@ const RecreationAndFitness = () => {
               spy
               to="library"
             >
-              <img src={poolNotActive} className="notActiveIcon" />
-              <img src={poolActive} className="activeIcon" />
+              <img src={libraryNotActive} className="notActiveIcon" />
+              <img src={libraryActive} className="activeIcon" />
               <div className="hoverText">ספרייה</div>
             </ScrollLink>
             <ChatBot />
-          </div>
+          </div>*/}
           <div className="textArea">
             <div id="gym" className="gymText">
               <div className="titleDiv">
