@@ -84,6 +84,8 @@
 
 .customizer .customizer-content .closeBtnHeader .closeBtnDiv svg {
   position: absolute;
+  width: 25px;
+  height: 25px;
 }
 
 .customizer .customizer-content .closeBtnHeader .closeBtnDiv svg > path {
