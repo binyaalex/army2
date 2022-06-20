@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SmallHeader from "../repeat/SmallHeader";
 
 const Barbershop = (props) => {
@@ -43,14 +44,15 @@ const Barbershop = (props) => {
             className="flex-end"
             icon="icon-phone-black.svg"
             onClick={() => {
-              props.setOpenSideBar(!props.openSideBar);
+              // props.setOpenSideBar(!props.openSideBar);
+              props.openSideBarComponent("appointment")
             }}
           >
             <img src="/images/icon-phone-black.033ad4fd.svg" className="icon" />
             לקביעת תור:
-            <a className="link" href="tel: 972545562343">
-              <div className="text"> 054-5562343 </div>
-            </a>
+            <Link to={"#"} className="link">
+              <div className="text">054-5562343</div>
+            </Link>
           </icontext>
         </div>
         <div className="expand flexible queue x5">

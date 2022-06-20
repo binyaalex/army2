@@ -13,7 +13,18 @@ import { faStarOfDavid } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Services = () => {
-  const [openSideBar, setOpenSideBar] = useState(false);
+  const [openAppointmentSideBar, setOpenAppointmentSideBar] = useState(false);
+  const [openHospitalSideBar, setOpenHospitalSideBar] = useState(false);
+
+  const openSideBarComponent = (name) => {
+    setOpenAppointmentSideBar(name === 'appointment')
+    setOpenHospitalSideBar(name === 'hospitalstay')
+  }
+
+  const closeSideBarComponent = () => {
+    setOpenAppointmentSideBar(false);
+    setOpenHospitalSideBar(false);
+  }
 
   const NavigatorArr = [
     {
@@ -40,17 +51,20 @@ const Services = () => {
         <div className="content">
           <Navigator NavigatorArr={NavigatorArr} />
           <Barbershop
-            setOpenSideBar={setOpenSideBar}
-            openSideBar={openSideBar}
+            openSideBarComponent={openSideBarComponent}
           />
-          <Faults />
+          <Faults
+          openSideBarComponent={openSideBarComponent}
+          />
           <Religion />
         </div>
       </navigatable>
       <Sidebar
-        sidebarComponent={<Appointment />}
-        setOpenSideBar={setOpenSideBar}
-        openSideBar={openSideBar}
+        openAppointmentSideBar={openAppointmentSideBar}
+        setOpenAppointmentSideBar={setOpenAppointmentSideBar}
+        openHospitalSideBar={openHospitalSideBar}
+        setOpenHospitalSideBar={setOpenHospitalSideBar}
+        closeSideBarComponent={closeSideBarComponent}
       />
     </div>
   );

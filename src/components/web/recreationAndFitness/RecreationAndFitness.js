@@ -93,6 +93,7 @@ import doctor from "../../../assets/images/icons/doctor.svg";
 import ChatBot from "../chat/ChatBot";
 
 import Navigator from '../repeat/newNavigator/Navigator'
+import { Link } from "react-router-dom";
 
 const RecreationAndFitness = () => {
 
@@ -490,15 +491,15 @@ const RecreationAndFitness = () => {
                                   <div>
                                     אימוני סטודיו זמינים לכל הבהדים בתאום מול
                                     ירין:
-                                    <a
+                                    <Link
                                       className="link"
-                                      href="tel:97254-467-5273"
+                                      to={"#"}
                                     >
                                       {" "}
                                       <div className="text">
                                         054-467-5273
                                       </div>{" "}
-                                    </a>
+                                    </Link>
                                   </div>
                                 </div>
                               </div>
@@ -855,14 +856,14 @@ const RecreationAndFitness = () => {
                             />
                             <div>
                               אתי הספרנית:
-                              <a
+                              <Link
                                 className="detailsPhoneImgDivLink"
-                                href="tel:+972523393349"
+                                to={"#"}
                               >
                                 <div className="detailsPhoneImgDivLinkNumber">
                                   0523393349
                                 </div>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>

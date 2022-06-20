@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 import SmallHeader from "../repeat/SmallHeader";
 
 const Religion = () => {
@@ -40,15 +43,15 @@ const Religion = () => {
               <div>רב קריית ההדרכה:</div>
             </div>
             <div className="col flexible">
-              <a className="line-end link" href="tel: +97273-3772644">
+              <Link to={"#"} className="line-end link">
                 <div className="text">073-3772644</div>
-              </a>
-              <a className="line-end link" href="tel: +97273-3772609">
+              </Link>
+              <Link to={"#"} className="line-end link">
                 <div className="text">073-3772609</div>
-              </a>
-              <a className="line-end link" href="tel: +97273-3772608">
+              </Link>
+              <Link to={"#"} className="line-end link">
                 <div className="text">073-3772608</div>
-              </a>
+              </Link>
             </div>
           </icontext>
           <div>

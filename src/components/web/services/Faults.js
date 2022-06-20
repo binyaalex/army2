@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import SmallHeader from "../repeat/SmallHeader";
 
-const Faults = () => {
+const Faults = (props) => {
   return (
     <div
       className="tickets"
@@ -14,6 +15,10 @@ const Faults = () => {
           <icontext
             className="first-centered flex-end"
             icon="icon-phone-black.svg"
+            onClick={() => {
+              // props.setOpenSideBar(!props.openSideBar);
+              props.openSideBarComponent("hospitalstay")
+            }}
           >
             <img src="/images/icon-phone-black.033ad4fd.svg" className="icon" />
             <div>
@@ -21,9 +26,9 @@ const Faults = () => {
               בטלפון הצבאי: 2000
               <br />
               בטלפון אזרחי:
-              <a className="link" href="tel: +972733772000">
+              <Link to={"#"} className="link">
                 <div className="text">073-3772000</div>
-              </a>
+              </Link>
             </div>
           </icontext>
         </div>

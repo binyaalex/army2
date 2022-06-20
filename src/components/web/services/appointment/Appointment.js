@@ -33,11 +33,7 @@ function Appointment() {
             </div>
 
             <div className="searchbox">
-              <input
-                id="search"
-                type="search"
-                placeholder="חפשי לפי שם "
-              />
+              <input id="search" type="search" placeholder="חפשי לפי שם " />
               <SearchIcon className="search_icon" />
             </div>
           </div>
@@ -93,12 +89,13 @@ function Appointment() {
               <MoreTimeIcon />
             </div>
           </div>
-{/*
-          <div className="timeselectoroption_container">
+
+          {/* <div className="timeselectoroption_container">
             <MeetBtn text="פגישה" />
             <MeetBtn text="שיחת וידאו" />
             <MeetBtn text="שיחת טלפון" />
-          </div>*/}
+          </div> */}
+          
           <div className="box_btn">
             <div className="container">
               <div className="btn_area">
